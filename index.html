@@ -941,6 +941,9 @@
         .theme-neon-pink::before {
             background: linear-gradient(45deg, rgba(255, 51, 204, 0.15) 0%, rgba(204, 0, 153, 0.15) 50%, transparent 100%);
         }
+        .badge-tiktok {
+            background: linear-gradient(45deg, #00f2ea, #ff0050) !important; /* Цвета в стиле TikTok */
+        }
     </style>
 </head>
 <body class="theme-hacker">
@@ -1011,8 +1014,18 @@
                         <p class="card-desc">Владелец крупных проектов, основатель "Шапито"</p>
                     </div>
                 </div>
+                <div class="card" onclick="openModal('@waIetov')">
+                    <div class="card-badge badge-top">ТОП</div>
+                    <div class="card-img-container">
+                        <img src="https://i.imgur.com/PeFCNMJ.jpg" alt="@waIetov" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">@waIetov</h3>
+                        <p class="card-desc">Владелец крупных проектов, основатель "Шапито"</p>
+                    </div>
+                </div>
                 <div class="card" onclick="openModal('@oexec')">
-                    <div class="card-badge badge-top">(замечен за БОМЖом) ТОП</div>
+                    <div class="card-badge badge-tiktok">Поднялся за счет TikTok</div>
                     <div class="card-img-container">
                         <img src="https://i.imgur.com/rF7MCo9.jpg" alt="@oexec" class="card-img">
                     </div>
@@ -1389,6 +1402,11 @@
                 info: 'В комьюнити очень давно, имеет один из самых крупных проектов. Обладает наибольшим феймом среди всех. Основатель проекта "Белый Аист". Провел множество валидаций известных медийных личностей, включая Евгения Вавилонова, Алчность, Тихо и других. Известен своей активной позицией и влиянием в сообществе. Не скрывает свои данные с 2022 года. на данный момент является лицом СНГ комьюнити..',
                 channel: 'https://t.me/BelBusel',
                 dm: 'https://t.me/fuckmefi'
+            },
+            '@waIetov': {
+                info: 'В комьюнити очень давно, имеет один из самых крупных проектов. Обладает наибольшим феймом среди всех. Основатель проекта "Белый Аист". Провел множество валидаций известных медийных личностей, включая Евгения Вавилонова, Алчность, Тихо и других. Известен своей активной позицией и влиянием в сообществе. Не скрывает свои данные с 2022 года. на данный момент является лицом СНГ комьюнити..',
+                channel: 'https://t.me/+QCXFUvLEJ101NGJi',
+                dm: 'https://t.me/waIetov'
             },
             '@chapaevv': {
                 info: 'Один из самых медийных личностей в комьюнити, владелец нескольких крупных проектов. Активный участник различных событий и обсуждений. Основатель популярного проекта "Шапито". Провел валидации многих медийных личностей. В редких случаях был замешан в спорных ситуациях, связанных с небольшими суммами денег.',
