@@ -1,16 +1,15 @@
-let messages = []; // Временное хранилище (сбрасывается при перезапуске)
+let messages = []; // Временное хранилище
 
 module.exports = async (req, res) => {
     if (req.method === 'POST') {
-        const { message } = req.body;
-        if (!message) {
-            return res.status(400).json({ error: 'Message is required' });
+        const { message, nickname } = req.body;
+        if (!message || !nickname) {
+            return res.status(400).json({ error: 'Message and nickname required' });
         }
-        messages.push(message);
-        console.log('Message added:', message);
+        const chatMessage = { nickname, text: message, timestamp: Date.now() };
+        messages.push(chatMessage);
         return res.status(200).json({ success: true });
     } else if (req.method === 'GET') {
-        console.log('Returning messages:', messages);
         return res.status(200).json(messages);
     } else {
         return res.status(405).json({ error: 'Method not allowed' });
