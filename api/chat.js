@@ -1,33 +1,63 @@
-const { WebSocketServer, WebSocket } = require('ws');
+// Элементы DOM
+const chatMessages = document.getElementById('chat-messages');
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
 
-module.exports = (req, res) => {
-    if (req.headers.upgrade === 'websocket') {
-        const wss = new WebSocketServer({ noServer: true });
-        
-        wss.handleUpgrade(req, req.socket, Buffer.alloc(0), (ws) => {
-            wss.emit('connection', ws, req);
+// Функция отправки сообщения через HTTP
+async function sendChatMessage() {
+    const text = chatInput.value.trim();
+    if (!text) return;
+
+    try {
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text })
         });
 
-        wss.on('connection', (ws) => {
-            ws.on('message', (message) => {
-                // Добавляем имя пользователя к сообщению
-                const username = "Аноним"; // Можно добавить систему авторизации
-                const messageWithUser = `${username}: ${message.toString()}`;
-                
-                // Отправляем сообщение всем клиентам
-                wss.clients.forEach((client) => {
-                    if (client !== ws && client.readyState === WebSocket.OPEN) {
-                        client.send(messageWithUser);
-                    }
-                });
-                
-                // Отправляем подтверждение отправителю
-                if (ws.readyState === WebSocket.OPEN) {
-                    ws.send(`Вы: ${message.toString()}`);
-                }
-            });
-        });
-        return;
+        if (response.ok) {
+            chatInput.value = ''; // Очистка поля ввода
+        } else {
+            console.error('Failed to send message:', response.status);
+        }
+    } catch (error) {
+        console.error('Error sending message:', error);
     }
-    res.status(400).send('This is a WebSocket endpoint');
-};
+}
+
+// Функция получения сообщений (polling)
+async function fetchMessages() {
+    try {
+        const response = await fetch('/api/chat');
+        const messages = await response.json();
+        chatMessages.innerHTML = ''; // Очистка текущих сообщений
+        messages.forEach(msg => {
+            const message = document.createElement('div');
+            message.classList.add('message');
+            message.textContent = msg;
+            chatMessages.appendChild(message);
+        });
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Прокрутка вниз
+    } catch (error) {
+        console.error('Error fetching messages:', error);
+    }
+}
+
+// Обработчики событий
+sendButton.addEventListener('click', () => {
+    console.log('Send button clicked');
+    sendChatMessage();
+});
+
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        console.log('Enter pressed');
+        sendChatMessage();
+    }
+});
+
+// Периодический опрос сообщений каждые 2 секунды
+setInterval(fetchMessages, 2000);
+
+// Начальная загрузка сообщений
+fetchMessages();
