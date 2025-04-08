@@ -162,6 +162,15 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/fmcGLTr.jpg'
     },
+    '@HolyTerov': {
+        info: 'HolyTerov (холи) — один из известных личностей в комьюнити, активный игрок в различных активностях и дискуссиях. Главный основатель известного проекта “Последний Вздох”и @defxolu Участвовал в валидации многих мидийных личностей.',
+        channel: 'https://t.me/bioxolu',
+        dm: 'https://t.me/HolyTerov',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/jadIAqx.jpg'
+    },
     '@sbulemon': {
         info: 'Появился в комьюнити в 2022 году. Специализируется на OSINT (разведка на основе открытых источников) и программировании. Автор инструмента @lemon_tool, который получил признание в сообществе. Известен техническим подходом к решению задач.',
         channel: 'https://t.me/sbulemon',
