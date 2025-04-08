@@ -1,8 +1,7 @@
-let messages = []; // Временное хранилище сообщений (сбрасывается при перезапуске функции)
+let messages = []; // Временное хранилище (сбрасывается при перезапуске)
 
 module.exports = async (req, res) => {
     if (req.method === 'POST') {
-        // Добавление нового сообщения
         const { message } = req.body;
         if (!message) {
             return res.status(400).json({ error: 'Message is required' });
@@ -11,7 +10,6 @@ module.exports = async (req, res) => {
         console.log('Message added:', message);
         return res.status(200).json({ success: true });
     } else if (req.method === 'GET') {
-        // Получение всех сообщений
         console.log('Returning messages:', messages);
         return res.status(200).json(messages);
     } else {
