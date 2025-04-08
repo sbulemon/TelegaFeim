@@ -518,3 +518,19 @@ if (profileUsername && personalities[profileUsername]) {
     currentSearchQuery = profileUsername; // Поиск по имени пользователя
     renderCards(currentFilter, currentSearchQuery);
 }
+function openFAQModal() {
+    const modal = document.getElementById('faq-modal');
+    modal.classList.add('active');
+}
+
+function closeFAQModal() {
+    const modal = document.getElementById('faq-modal');
+    modal.classList.remove('active');
+}
+
+// Добавим обработчик закрытия при клике вне модального окна
+document.getElementById('faq-modal').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('faq-modal')) {
+        closeFAQModal();
+    }
+});
