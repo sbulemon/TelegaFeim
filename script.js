@@ -314,23 +314,41 @@ const personalities = {
         badgeText: 'MID',
         img: 'https://i.imgur.com/DEFAULT_IMAGE.jpg'
     },
-    '@codeguru': {
-        info: 'В комьюнити с 2021 года. Специализируется на разработке софта для автоматизации задач в Telegram. Автор нескольких популярных ботов, используемых в сообществе.',
-        channel: 'https://t.me/codeguru_channel',
-        dm: 'https://t.me/codeguru',
+    '@RigOlit': {
+        info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
+        channel: 'https://t.me/RigOlit',
+        dm: 'https://t.me/RigOlit',
         category: 'coder',
         badge: 'badge-coder',
         badgeText: 'CODER',
-        img: 'https://i.imgur.com/DEFAULT_CODER_IMAGE.jpg'
+        img: 'https://i.imgur.com/JkwOcML.jpg'
     },
-    '@scriptkid': {
-        info: 'Известен как "Скрипт". Пишет утилиты для OSINT и автоматизации. В комьюнити с 2022 года. Имеет репутацию надежного кодера, хотя иногда его проекты критикуют за баги.',
-        channel: 'https://t.me/scriptkid_tools',
-        dm: 'https://t.me/scriptkid',
+    '@vkmef': {
+        info: 'Мефосквит - талантливый разработчик, создатель TOKLOM, TOKLOM FREE, HIMARS, HIMARS FREE и многих других проектов. Известен своими техническими решениями и вкладом в развитие инструментов для сообщества.',
+        channel: 'https://t.me/vkmef',
+        dm: 'https://t.me/vkmef',
         category: 'coder',
         badge: 'badge-coder',
         badgeText: 'CODER',
-        img: 'https://i.imgur.com/DEFAULT_CODER_IMAGE2.jpg'
+        img: 'https://i.imgur.com/M94dBCu.jpg'
+    },
+    '@DatabaseAttack': {
+        info: 'Wolfram - кодер и разработчик. Основатель проектов "HexorSoftware" и "DecryptageTeam!". Известен своими техническими навыками и вкладом в развитие инструментов для сообщества. Специализируется на создании программного обеспечения для различных задач.',
+        channel: 'https://t.me/DatabaseAttack',
+        dm: 'https://t.me/DatabaseAttack',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/lLAr1sa.jpg'
+    },
+    '@skypesender': {
+        info: 'Hidden - таинственный кодер, основатель нескольких известных проектов включая "Mi6", "Eclipse", "Eclipse Black" и "HIDDEN PROJECT". Специализируется на создании сложных решений с акцентом на безопасность и анонимность. Известен своим нестандартным подходом к разработке и редкими, но значимыми появлениями в сообществе.',
+        channel: 'https://t.me/skypesender',
+        dm: 'https://t.me/skypesender',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/KVfhwB5.jpg'
     },
     '@bomg123': {
         info: 'Типичный БОМЖер. Занимается мелкими скамами и попытками обмана новичков. В комьюнити с 2023 года, но уже успел заработать негативную репутацию.',
