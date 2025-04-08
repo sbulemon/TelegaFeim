@@ -505,26 +505,57 @@ document.querySelectorAll('.dropdown-item[onclick^="setTheme"]').forEach(item =>
     });
 });
 
+// Функция для открытия FAQ
 function openFAQModal() {
     const modal = document.getElementById('faq-modal');
+    if (!modal) {
+        console.error('FAQ modal not found!');
+        return;
+    }
+    // Убедимся, что содержимое не исчезло
+    const modalText = modal.querySelector('.modal-text');
+    if (!modalText.innerHTML.trim()) {
+        // Восстановим содержимое, если оно пропало
+        modalText.innerHTML = `
+            <p><strong>Топ медийки</strong> - Очень часто узнаваемые личности среди комьюнити, имеют очень позитивный статус и значительное влияние в сообществе.</p>
+            <p><strong>Фейм</strong> - Популярные личности в комьюнити, имеют свое небольшое сообщество либо часто узнаются другими участниками.</p>
+            <p><strong>Средний фейм</strong> - Средне узнаваемые личности, изредка узнаются среди комьюнити, имеют ограниченную известность.</p>
+            <p><strong>Кодеры</strong> - Технические специалисты и разработчики, известные своим вкладом в создание инструментов и ПО для комьюнити.</p>
+            <p><strong>БОМЖеры</strong> - Личности с негативной репутацией, часто связанные с мошенничеством или сомнительной деятельностью.</p>
+        `;
+    }
     modal.classList.add('active');
 }
 
+// Функция для закрытия FAQ
 function closeFAQModal() {
     const modal = document.getElementById('faq-modal');
-    modal.classList.remove('active');
+    if (modal) {
+        modal.classList.remove('active');
+    }
 }
 
 // Закрытие при клике вне модального окна
-document.getElementById('faq-modal').addEventListener('click', (e) => {
-    if (e.target === document.getElementById('faq-modal')) {
+document.addEventListener('click', (e) => {
+    const faqModal = document.getElementById('faq-modal');
+    if (faqModal && e.target === faqModal && faqModal.classList.contains('active')) {
         closeFAQModal();
     }
 });
 
 // Закрытие при нажатии Esc
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && document.getElementById('faq-modal').classList.contains('active')) {
+    const faqModal = document.getElementById('faq-modal');
+    if (e.key === 'Escape' && faqModal && faqModal.classList.contains('active')) {
         closeFAQModal();
     }
+});
+
+// Убедимся, что кнопка FAQ всегда работает
+document.addEventListener('DOMContentLoaded', () => {
+    const faqBtn = document.querySelector('.faq-btn');
+    if (faqBtn) {
+        faqBtn.addEventListener('click', openFAQModal);
+    }
+    renderCards(); // Существующий вызов рендеринга карточек
 });
