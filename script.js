@@ -399,14 +399,14 @@ const personalities = {
         img: 'https://i.imgur.com/dKC9x2s.jpg'
      //бомжи ебал их рот 
     },
-    '@bomg123': {
-        info: 'Типичный БОМЖер. Занимается мелкими скамами и попытками обмана новичков. В комьюнити с 2023 года, но уже успел заработать негативную репутацию.',
-        channel: 'https://t.me/bomg123_channel',
-        dm: 'https://t.me/bomg123',
+    '@crystallwallets': {
+        info: 'Заявляю что @Crystallwallets сын далбоеба который сам нихуя не может это топ 1 дожор бомж, я ему дал тэг на время на что он всосал и не отдал прошу распространить это ведь данный человек сынок лярвы это первое, делает липы и так еще накручивает био бля как же это смешно весь клан состоит из накрученных, что он что его пёс куки бой пытался накрутить отзывы, для скама.',
+        channel: 'https://t.me/crystallwallets',
+        dm: 'https://t.me/crystallwallets',
         category: 'bomg',
         badge: 'badge-bomg',
         badgeText: 'БОМЖ',
-        img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
+        img: 'https://i.imgur.com/MwHiBVw.jpg'
     },
     '@scamzoid': {
         info: 'Скамзоид - классический пример скамера. Появился в 2024 году, пытался продавать фейковые базы данных. Был разоблачен и теперь считается изгоем.',
