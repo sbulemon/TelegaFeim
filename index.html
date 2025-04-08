@@ -1052,7 +1052,7 @@
                     <div class="dropdown-item" data-category="bomg"><i class="fas fa-skull"></i> Скамеры</div>
                 </div>
             </div>
-
+        
             <div class="dropdown">
                 <button class="dropdown-btn">
                     <i class="fas fa-paint-brush"></i> Выбрать тему
@@ -1065,12 +1065,28 @@
                     <div class="dropdown-item" onclick="setTheme('theme-neon-pink')"><i class="fas fa-heart"></i> Розовая</div>
                 </div>
             </div>
-
+        
             <a href="https://t.me/sbulemon" target="_blank" class="support-btn">
                 <i class="fas fa-headset"></i> Тех. поддержка
             </a>
+        
+            <button class="support-btn" onclick="openFAQModal()">
+                <i class="fas fa-question-circle"></i> FAQ
+            </button>
         </div>
-
+        <div class="modal" id="faq-modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeFAQModal()"><i class="fas fa-times"></i></button>
+                <h2 class="modal-title"><i class="fas fa-question-circle"></i> FAQ - Категории</h2>
+                <div class="modal-text">
+                    <p><strong>Топ медийки</strong> - Очень часто узнаваемые личности среди комьюнити, имеют очень позитивный статус в комьюнити и значительное влияние.</p>
+                    <p><strong>Фейм</strong> - Популярные личности в комьюнити, имеют свое маленькое сообщество либо просто часто узнаются другими участниками.</p>
+                    <p><strong>Средний фейм</strong> - Средне узнаваемые личности, изредка узнаются среди комьюнити, имеют ограниченную известность.</p>
+                    <p><strong>Кодеры</strong> - Технические специалисты и разработчики, известные своим вкладом в создание инструментов и программного обеспечения для комьюнити.</p>
+                    <p><strong>БОМЖеры</strong> - Личности с негативной репутацией, часто связанные с мошенничеством или сомнительной деятельностью.</p>
+                </div>
+            </div>
+        </div>
         <section class="section fade-in">
             <h2 class="section-title">Топ медийки</h2>
             <div class="grid" id="top-grid"></div>
