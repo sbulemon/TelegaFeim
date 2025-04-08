@@ -559,3 +559,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     renderCards(); // Существующий вызов рендеринга карточек
 });
+function updateStats() {
+    const counts = {
+        top: Object.values(personalities).filter(p => p.category === 'top').length,
+        fame: Object.values(personalities).filter(p => p.category === 'fame').length,
+        mid: Object.values(personalities).filter(p => p.category === 'mid').length,
+        coder: Object.values(personalities).filter(p => p.category === 'coder').length,
+        bomg: Object.values(personalities).filter(p => p.category === 'bomg').length
+    };
+    document.getElementById('top-count').textContent = `Топ: ${counts.top}`;
+    document.getElementById('fame-count').textContent = `Фейм: ${counts.fame}`;
+    document.getElementById('mid-count').textContent = `Средний: ${counts.mid}`;
+    document.getElementById('coder-count').textContent = `Кодеры: ${counts.coder}`;
+    document.getElementById('bomg-count').textContent = `БОМЖеры: ${counts.bomg}`;
+}
+updateStats(); // Вызов при загрузке
