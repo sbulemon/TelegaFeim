@@ -505,19 +505,6 @@ document.querySelectorAll('.dropdown-item[onclick^="setTheme"]').forEach(item =>
     });
 });
 
-// Load saved theme or default to 'theme-hacker'
-const savedTheme = localStorage.getItem('theme') || 'theme-hacker';
-setTheme(savedTheme);
-
-renderCards();
-// Check URL for username parameter and filter cards accordingly
-const urlParams = new URLSearchParams(window.location.search);
-const profileUsername = urlParams.get('username');
-if (profileUsername && personalities[profileUsername]) {
-    currentFilter = personalities[profileUsername].category; // Фильтр по категории профиля
-    currentSearchQuery = profileUsername; // Поиск по имени пользователя
-    renderCards(currentFilter, currentSearchQuery);
-}
 function openFAQModal() {
     const modal = document.getElementById('faq-modal');
     modal.classList.add('active');
@@ -528,9 +515,16 @@ function closeFAQModal() {
     modal.classList.remove('active');
 }
 
-// Добавим обработчик закрытия при клике вне модального окна
+// Закрытие при клике вне модального окна
 document.getElementById('faq-modal').addEventListener('click', (e) => {
     if (e.target === document.getElementById('faq-modal')) {
+        closeFAQModal();
+    }
+});
+
+// Закрытие при нажатии Esc
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('faq-modal').classList.contains('active')) {
         closeFAQModal();
     }
 });
