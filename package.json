@@ -1,13 +1,13 @@
-    {
-        "name": "telegram-chat",
-        "version": "1.0.0",
-        "description": "Чат для сообщества Telegram",
-        "main": "api/chat.js",
-        "scripts": {
-            "start": "vercel dev"
-        },
-        "dependencies": {},
-        "devDependencies": {
-            "vercel": "^28.0.0"
+{
+    "rewrites": [
+        { "source": "/chat", "destination": "/chat.html" },
+        { "source": "/api/chat", "destination": "/api/chat.js" }
+    ],
+    "functions": {
+        "api/chat.js": {
+            "memory": 1024,
+            "maxDuration": 10,
+            "runtime": "nodejs18.x"
         }
     }
+}
