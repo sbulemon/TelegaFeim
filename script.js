@@ -489,7 +489,7 @@ function openModal(username, data) {
     document.getElementById('modal-channel').href = data.channel;
     document.getElementById('modal-dm').href = data.dm;
     const profileUrl = `https://telega-feim.vercel.app/?username=${encodeURIComponent(username)}`;
-    document.getElementById('modal-share').href = `https://t.me/share/url?url=${encodeURIComponent(profileUrl)}&text=${encodeURIComponent(`Check out ${username}'s profile on Telega Feim!`)}`;
+    document.getElementById('modal-share').href = `https://t.me/share/url?url=${encodeURIComponent(profileUrl)}&text=${encodeURIComponent(`проверь есть ли ты!${username}'s профиль c сайта, фейм листа @fametgkm`)}`;
     modal.classList.add('active');
 }
 
