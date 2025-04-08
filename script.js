@@ -344,6 +344,15 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/JkwOcML.jpg'
     },
+    '@TupoyOle_N': {
+        info: '𝕿𝖎𝖒𝖔𝖗𝖎𝖆 - Владелец проектов таких как: Timōría Projects, Hikari, OberonGroup, Spectrum а так же TgSmasher. ',
+        channel: 'https://t.me/TupoyOle_N',
+        dm: 'https://t.me/TupoyOle_N',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/PJvBIeg.jpg'
+    },
     '@vkmef': {
         info: 'Мефосквит - талантливый разработчик, создатель TOKLOM, TOKLOM FREE, HIMARS, HIMARS FREE и многих других проектов. Известен своими техническими решениями и вкладом в развитие инструментов для сообщества.',
         channel: 'https://t.me/vkmef',
