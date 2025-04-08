@@ -154,6 +154,7 @@
 
         function sendChatMessage() {
             const text = chatInput.value.trim();
+            console.log('Sending message:', text); // Добавь эту строку
             if (text && ws.readyState === WebSocket.OPEN) {
                 ws.send(text);
                 chatInput.value = '';
