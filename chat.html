@@ -137,33 +137,60 @@
         </div>
     </div>
 
-    <script>
-        const ws = new WebSocket('wss://telega-feim.vercel.app/api/chat');
-        const chatMessages = document.getElementById('chat-messages');
-        const chatInput = document.getElementById('chat-input');
+<script>
+    const ws = new WebSocket('wss://telega-feim.vercel.app/api/chat');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
 
-        ws.onopen = () => console.log('Connected to chat');
-        ws.onmessage = (event) => {
-            const message = document.createElement('div');
-            message.classList.add('message');
-            message.textContent = event.data;
-            chatMessages.appendChild(message);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        };
-        ws.onclose = () => console.log('Disconnected from chat');
+    // Обработчики событий WebSocket
+    ws.onopen = () => {
+        console.log('Connected to chat');
+        addSystemMessage('Вы подключились к чату');
+    };
+    
+    ws.onmessage = (event) => {
+        const message = document.createElement('div');
+        message.classList.add('message');
+        message.textContent = event.data;
+        chatMessages.appendChild(message);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+    
+    ws.onerror = (error) => {
+        console.error('WebSocket error:', error);
+        addSystemMessage('Ошибка подключения к чату');
+    };
+    
+    ws.onclose = () => {
+        console.log('Disconnected from chat');
+        addSystemMessage('Соединение с чатом потеряно');
+    };
 
-        function sendChatMessage() {
-            const text = chatInput.value.trim();
-            console.log('Sending message:', text); // Добавь эту строку
-            if (text && ws.readyState === WebSocket.OPEN) {
+    function addSystemMessage(text) {
+        const message = document.createElement('div');
+        message.classList.add('message');
+        message.style.background = 'var(--border)';
+        message.style.color = 'var(--text)';
+        message.textContent = text;
+        chatMessages.appendChild(message);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function sendChatMessage() {
+        const text = chatInput.value.trim();
+        if (text) {
+            if (ws.readyState === WebSocket.OPEN) {
                 ws.send(text);
                 chatInput.value = '';
+            } else {
+                addSystemMessage('Нет соединения с сервером');
             }
         }
+    }
 
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendChatMessage();
-        });
-    </script>
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendChatMessage();
+    });
+</script>
 </body>
 </html>
