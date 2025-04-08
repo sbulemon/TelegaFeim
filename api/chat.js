@@ -1,8 +1,9 @@
-const { WebSocketServer } = require('ws');
+const { WebSocketServer, WebSocket } = require('ws');
 
 module.exports = (req, res) => {
-    if (req.headers['upgrade'] === 'websocket') {
+    if (req.headers.upgrade === 'websocket') {
         const wss = new WebSocketServer({ noServer: true });
+        
         wss.handleUpgrade(req, req.socket, Buffer.alloc(0), (ws) => {
             wss.emit('connection', ws, req);
         });
@@ -16,7 +17,6 @@ module.exports = (req, res) => {
                 });
             });
         });
-
         return;
     }
     res.status(400).send('This is a WebSocket endpoint');
