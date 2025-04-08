@@ -44,7 +44,7 @@
             100% { background-position: 0% 0%; }
         }
 
-        .chat-container {
+        .chat-container, .auth-container {
             max-width: 900px;
             margin: 0 auto;
             background: var(--card-bg);
@@ -89,12 +89,12 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .chat-input {
+        .chat-input, .auth-form {
             display: flex;
             gap: 1rem;
         }
 
-        .chat-input input {
+        .chat-input input, .auth-form input {
             flex: 1;
             padding: 0.9rem;
             border-radius: 12px;
@@ -105,12 +105,12 @@
             transition: all 0.3s ease;
         }
 
-        .chat-input input:focus {
+        .chat-input input:focus, .auth-form input:focus {
             border-color: var(--primary);
             box-shadow: 0 0 15px rgba(0, 255, 153, 0.2);
         }
 
-        .chat-input button {
+        .chat-input button, .auth-form button {
             padding: 0.9rem 2rem;
             border-radius: 12px;
             border: none;
@@ -120,18 +120,40 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .chat-input button:hover {
+        .chat-input button:hover, .auth-form button:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 255, 153, 0.4);
         }
 
-        .chat-input button:active {
+        .chat-input button:active, .auth-form button:active {
             transform: scale(0.95);
+        }
+
+        .auth-toggle {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .auth-toggle a {
+            color: var(--primary);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="chat-container">
+    <div id="auth-container" class="auth-container" style="display: block;">
+        <h2 class="chat-header" id="auth-header">Регистрация</h2>
+        <div class="auth-form">
+            <input type="text" id="nickname" placeholder="Введите никнейм">
+            <input type="password" id="password" placeholder="Введите пароль">
+            <button id="auth-button">Зарегистрироваться</button>
+        </div>
+        <div class="auth-toggle">
+            <a href="#" id="toggle-auth">Уже есть аккаунт? Войти</a>
+        </div>
+    </div>
+
+    <div id="chat-container" class="chat-container" style="display: none;">
         <h2 class="chat-header">Чат сообщества Telegram</h2>
         <div class="chat-messages" id="chat-messages"></div>
         <div class="chat-input">
@@ -141,69 +163,138 @@
     </div>
 
     <script>
+        const authContainer = document.getElementById('auth-container');
+        const chatContainer = document.getElementById('chat-container');
+        const authHeader = document.getElementById('auth-header');
+        const authButton = document.getElementById('auth-button');
+        const toggleAuth = document.getElementById('toggle-auth');
+        const nicknameInput = document.getElementById('nickname');
+        const passwordInput = document.getElementById('password');
         const chatMessages = document.getElementById('chat-messages');
         const chatInput = document.getElementById('chat-input');
         const sendButton = document.getElementById('send-button');
-    
-        async function sendChatMessage() {
-            const text = chatInput.value.trim();
-            console.log('Attempting to send message:', text);
-    
-            if (!text) {
-                console.log('Message is empty, not sending');
+
+        let isRegister = true;
+        let currentNickname = null;
+        let lastTimestamp = 0;
+
+        // Переключение между регистрацией и входом
+        toggleAuth.addEventListener('click', (e) => {
+            e.preventDefault();
+            isRegister = !isRegister;
+            authHeader.textContent = isRegister ? 'Регистрация' : 'Вход';
+            authButton.textContent = isRegister ? 'Зарегистрироваться' : 'Войти';
+            toggleAuth.textContent = isRegister ? 'Уже есть аккаунт? Войти' : 'Нет аккаунта? Зарегистрироваться';
+        });
+
+        // Регистрация или вход
+        authButton.addEventListener('click', async () => {
+            const nickname = nicknameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!nickname || !password) {
+                alert('Введите никнейм и пароль');
                 return;
             }
-    
+
+            try {
+                const response = await fetch('/api/auth', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        action: isRegister ? 'register' : 'login',
+                        nickname,
+                        password
+                    })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    currentNickname = result.nickname;
+                    localStorage.setItem('sessionId', result.sessionId); // Сохраняем сессию
+                    authContainer.style.display = 'none';
+                    chatContainer.style.display = 'block';
+                    fetchMessages(); // Начинаем загрузку сообщений
+                    setInterval(fetchMessages, 2000); // Фоновое обновление
+                } else {
+                    alert(result.error);
+                }
+            } catch (error) {
+                console.error('Auth error:', error);
+                alert('Ошибка сервера');
+            }
+        });
+
+        // Автоматический вход, если сессия сохранена
+        const sessionId = localStorage.getItem('sessionId');
+        if (sessionId) {
+            authContainer.style.display = 'none';
+            chatContainer.style.display = 'block';
+            fetch('/api/auth/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sessionId })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    currentNickname = data.nickname;
+                    fetchMessages();
+                    setInterval(fetchMessages, 2000);
+                } else {
+                    localStorage.removeItem('sessionId');
+                }
+            });
+        }
+
+        // Отправка сообщения
+        async function sendChatMessage() {
+            const text = chatInput.value.trim();
+            if (!text || !currentNickname) return;
+
             try {
                 const response = await fetch('/api/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ message: text })
+                    body: JSON.stringify({ message: text, nickname: currentNickname })
                 });
-    
+
                 if (response.ok) {
-                    console.log('Message sent successfully');
                     chatInput.value = '';
-                    fetchMessages(); // Обновляем сразу после отправки
-                } else {
-                    console.error('Failed to send message:', response.status);
+                    fetchMessages();
                 }
             } catch (error) {
-                console.error('Error sending message:', error);
+                console.error('Send message error:', error);
             }
         }
-    
+
+        // Загрузка сообщений
         async function fetchMessages() {
             try {
                 const response = await fetch('/api/chat');
                 const messages = await response.json();
-                chatMessages.innerHTML = '';
-                messages.forEach(msg => {
-                    const message = document.createElement('div');
-                    message.classList.add('message');
-                    message.textContent = msg;
-                    chatMessages.appendChild(message);
-                });
-                chatMessages.scrollTop = chatMessages.scrollHeight;
+                const newMessages = messages.filter(msg => msg.timestamp > lastTimestamp);
+
+                if (newMessages.length > 0) {
+                    newMessages.forEach(msg => {
+                        const message = document.createElement('div');
+                        message.classList.add('message');
+                        message.textContent = `${msg.nickname}: ${msg.text}`;
+                        chatMessages.appendChild(message);
+                    });
+                    lastTimestamp = Math.max(...messages.map(msg => msg.timestamp));
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
             } catch (error) {
-                console.error('Error fetching messages:', error);
+                console.error('Fetch messages error:', error);
             }
         }
-    
-        sendButton.addEventListener('click', () => {
-            console.log('Send button clicked');
-            sendChatMessage();
-        });
-    
+
+        // Обработчики событий
+        sendButton.addEventListener('click', sendChatMessage);
         chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                console.log('Enter key pressed');
-                sendChatMessage();
-            }
+            if (e.key === 'Enter') sendChatMessage();
         });
-    
-        setInterval(fetchMessages, 2000); // Обновление каждые 2 секунды
-        fetchMessages(); // Начальная загрузка
     </script>
 </body>
 </html>
