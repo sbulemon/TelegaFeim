@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        { "source": "/chat", "destination": "/chat.html" },
+        { "source": "/api/chat", "destination": "/api/chat.js" }
+    ],
+    "functions": {
+        "api/chat.js": {
+            "memory": 1024,
+            "maxDuration": 10
+        }
+    }
+}
