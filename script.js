@@ -276,7 +276,7 @@ const personalities = {
         category: 'mid',
         badge: 'badge-FAME',
         badgeText: 'MID',
-        img: 'https://i.imgur.com WU7BF0x.jpg'
+        img: 'https://i.imgur.com/WU7BF0x.jpg'
     },
     '@skrapoov': {
         info: 'Skrapov - Появился в км с 2022 года, используя навыки осинта для пробива. Делал выеб на медийку "Кумоникс". Был/являюсь основателем "Инфо поток", "Skype", "Hellbound". Состою в клане Crime.',
@@ -312,7 +312,7 @@ const personalities = {
         category: 'mid',
         badge: 'badge-FAME',
         badgeText: 'MID',
-        img: 'https://i.imgur.com/DEFAULT_IMAGE.jpg'
+        img: 'https://i.imgur.com/dRwO2AZ.jpg'
     },
     '@RigOlit': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
@@ -357,7 +357,7 @@ const personalities = {
         category: 'bomg',
         badge: 'badge-bomg',
         badgeText: 'БОМЖ',
-        img: 'https://i.imgur.com/DEFAULT_BOMG_IMAGE.jpg'
+        img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
     '@scamzoid': {
         info: 'Скамзоид - классический пример скамера. Появился в 2024 году, пытался продавать фейковые базы данных. Был разоблачен и теперь считается изгоем.',
@@ -366,7 +366,7 @@ const personalities = {
         category: 'bomg',
         badge: 'badge-bomg',
         badgeText: 'БОМЖ',
-        img: 'https://i.imgur.com/DEFAULT_BOMG_IMAGE2.jpg'
+        img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     }
 };
 
