@@ -574,3 +574,15 @@ function updateStats() {
     document.getElementById('bomg-count').textContent = `БОМЖеры: ${counts.bomg}`;
 }
 updateStats(); // Вызов при загрузке
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', () => {
+    const btn = document.querySelector('.scroll-top-btn');
+    if (window.scrollY > 300) {
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
+});
