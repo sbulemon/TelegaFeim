@@ -1,8 +1,13 @@
 {
-    "dependencies": {
-        "ws": "^8.14.2"
+    "name": "telegram-chat",
+    "version": "1.0.0",
+    "description": "Чат для сообщества Telegram",
+    "main": "api/chat.js",
+    "scripts": {
+        "start": "vercel dev"
     },
-    "engines": {
-        "node": ">=18.x"
+    "dependencies": {},
+    "devDependencies": {
+        "vercel": "^28.0.0"
     }
 }
