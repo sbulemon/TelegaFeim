@@ -140,7 +140,7 @@ const personalities = {
         dm: 'https://t.me/usershat',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'изгой',
         img: 'https://i.imgur.com/raOOO16.jpg'
     },
     '@agresseve': {
