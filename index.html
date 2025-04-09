@@ -1046,12 +1046,27 @@
             0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
             50% { box-shadow: 0 4px 25px rgba(0, 255, 153, 0.7); }
         }
+        .header-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .header-img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="theme-hacker">
     <div class="container">
         <header class="header fade-in">
             <h1>Медийные личности Telegram</h1>
+            <img src="https://gen.jut.su/chakranature/background/anime/code-geass.dark.jpg" alt="Code Geass Background" class="header-img">
             <p>Справочник известных личностей в комьюнити Telegram с информацией о их деятельности и проектах</p>
         </header>
 
