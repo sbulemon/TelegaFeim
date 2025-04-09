@@ -187,7 +187,7 @@ const personalities = {
         dm: 'https://t.me/sbulemon',
         category: 'fame',
         badge: 'badge-FAME',
-        badgeText: 'FAME',
+        badgeText: 'CEO',
         img: 'https://i.imgur.com/S6Lgvze.jpg'
     },
     '@httpsfilan': {
