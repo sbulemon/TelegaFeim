@@ -107,15 +107,6 @@ const personalities = {
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/gGwa3Ei.jpg'
     },
-    '@aftter': {
-        info: 'Loxssy Имеет очень резкий и грубый характер, готов ебнуть за обычное оскорбление в его сторону. Славится своими поджогами а также пастами на медиек. Владелец крупных проектов связанных с незаконной сферой деятельности.',
-        channel: 'https://t.me/LoxssyDoxing',
-        dm: 'https://t.me/aftter',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'ТОП',
-        img: 'https://i.imgur.com/WmI5xIg.jpg'
-    },
     '@KrakenRevenge': {
         info: 'Kraken - пришел в 2021 году, стал известен после 22 года. Занимался изначально сватингом, а после разоблачением и разбором личностей. Администратор "Белый Аист", со-владелец "противкм", со-владелец "шлюхикм".',
         channel: 'https://t.me/BelBusel',
