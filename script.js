@@ -362,6 +362,15 @@ const personalities = {
         badgeText: 'MID',
         img: 'https://i.imgur.com/dRwO2AZ.jpg'
     },
+    '@ownerShady': {
+        info: 'Чай или же Shady - давний участник Телеграм комьюнити. Более мение сильная личность с маленьким феймом, но больший потонцеалом. Является активным администорлм в чате проекта Последний вздох. Имеет много известных сильных друзей. А также Чай учитель такой известной личности как Доха.',
+        channel: 'https://t.me/usudydy',
+        dm: 'https://t.me/ownerShady',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'замечан за скамом',
+        img: 'https://i.imgur.com/jOqFHCa.jpg'
+    },
                //кодеры жоперы гпт чатеры
     '@RigOlit': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
