@@ -408,6 +408,15 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/3wAtaHF.jpg'
     },
+    '@vkvzIom': {
+        info: 'Авангардов или же @vkvzIom - в коммьюнити тг с 2019 года, начел развиваться и набирать фейм в 2021 году. Основатель проектов "Alkash cult" @alkashkm , "Killer cult" . Моя деятельность - osint и swat. Валидизировал таких личностей как muller, antipov и sms panika. За спиной нету некого скам и тд.',
+        channel: 'https://t.me/alkashkm',
+        dm: 'https://t.me/vkvzIom',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/V9PDDPn.jpg'
+    },
             //кодеры жоперы гпт чатеры
     '@RigOlit': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
