@@ -463,6 +463,15 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/PwPYxWy.jpg'
     },
+    '@python_pioner': {
+        info: 'pythoneer (питонер) Состою в многих проектах ( в свое время помогал HIMARS и RigOlit ) Владелец проекта ReFind (@ReFindOsintBot) Пишу в основном ботов, серверы (в общем, бэкенд — моя тема) Появился в км с 23 года, был доксером но затем увлекся кодингом. Стаки: Python: • FastApi • Aiogram • MongoDB • другие.. Мирных дефаю, но нечасто т.к. времени не много',
+        channel: 'https://t.me/python_enter',
+        dm: 'https://t.me/python_pioner',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/K7mmkPu.jpg'
+    },
     '@sharpovv': {
         info: 'Пользователь sharpovv присоединился к сообществу в Telegram в начале 2023 года. Ранее он интересовался доксингом, но вскоре понял, что это не лучший путь',
         channel: 'https://t.me/crazysofts_4',
