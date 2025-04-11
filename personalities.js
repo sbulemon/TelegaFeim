@@ -299,6 +299,15 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/yFt3YWc.jpg'
     },
+     '@xaosq': {
+        info: 'apachi - в км с 2023 года активно по сей день сжигаю двери живодерам, основатель проекта mirage который активно сносят каждые два месяца, также ебу мать всех недодоксеро',
+        channel: 'https://t.me/xaosq',
+        dm: 'https://t.me/xaosq',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/VkE9DC2.jpg'
+    },
     '@dragov_world': {
         info: 'Dragov - влился в комьюнити в конце 21 года. Уже на 2 год он считался медийной личностью. Сейчас он считается одним из самых сильных людей в сфере OSINT-разведки. По касте он сватер, osint | ksint. Также сейчас он создает свое приложение по поиску людей, в котором находится более 200к баз по всему миру. Пока что занимает топ-3 по OSINT.',
         channel: 'https://t.me/dragov_project',
