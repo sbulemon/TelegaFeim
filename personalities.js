@@ -153,6 +153,15 @@ const personalities = {
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/ZcVMc3X.jpg'
     },
+    '@fallcvt': {
+        info: 'CVT - или лучше Criminal Violencet, Violent Crime. Данная Личность появилось  в км 2022 года.   Известно выходками и возможностьями в Км Старая   личность Necto — K0lza. Набрал популярность через основной Necto.Py/dll.module и из за своих возможностей и блага своей Группировке  OneEyeBlade Team ',
+        channel: 'https://t.me/notcvt',
+        dm: 'https://t.me/fallcvt',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'ТОП',
+        img: 'https://i.imgur.com/oVsfShC.jpg'
+    },
 
     //фейм челы тут я лимон чо за хуйгя пидарасы 
     '@fuckdoxa': {
