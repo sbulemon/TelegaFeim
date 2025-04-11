@@ -218,6 +218,15 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/F9RtFyZ.jpg'
     },
+    '@themiderov': {
+        info: 'miderov - я пришел в км в 2018 году, пришел я сам, с 20 по 23 год сидел на админке в докс бине, развивался сам и никто мне не помогал, в 21 году валиднул практически все комьюнити докса, делал очень много паст на разных типов а также помогал людям в проекте "угар по бомжам". также сидел в вк,дс и потом перешел в тг, узнают меня в каждом кф и практически каждый кидает респект, курил траву и ебашил каждых вторых, находил и нахожу валидки за пару минут времени, знаком со всеми из км и ни с кем нету ссор, делал пасты на таких личностей как "кисагуд", "покупной комаров", "шизуми" и много на кого еще.',
+        channel: 'https://t.me/miderovmusic',
+        dm: 'https://t.me/themideov',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/a8qE5El.jpg'
+    },
     '@d3l3t3dxuser': {
         info: 'Основной никнейм: tizercin. Род занятий: OSINT (разведка по открытым источникам), SOCMINT (анализ социальных сетей), GeoINT (геолокационная разведка), кибербезопасность, анализ данных. Пришел в км в начале 20 года и в этом же году начал свою деятельность.',
         channel: 'https://t.me/d3l3t3dxuser',
@@ -306,7 +315,7 @@ const personalities = {
         dm: 'https://t.me/disonov',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/KZ7UJGr.jpg'
     },
     '@Shiro_Hikari': {
@@ -315,7 +324,7 @@ const personalities = {
         dm: 'https://t.me/Shiro_Hikari',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/WU7BF0x.jpg'
     },
     '@skrapoov': {
@@ -324,7 +333,7 @@ const personalities = {
         dm: 'https://t.me/skrapoov',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/9czMfVi.jpg'
     },
     '@valcinov': {
@@ -333,7 +342,7 @@ const personalities = {
         dm: 'https://t.me/valcinov',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/5M4dEIa.jpg'
     },
     '@swagshits': {
@@ -342,7 +351,7 @@ const personalities = {
         dm: 'https://t.me/swagshits',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/zs0bQfj.jpg'
     },
     '@n1therhovski': {
@@ -351,7 +360,7 @@ const personalities = {
         dm: 'https://t.me/n1therhovski',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/Zmy8pvj.jpg'
     },
     '@crimeneko': {
@@ -360,7 +369,7 @@ const personalities = {
         dm: 'https://t.me/crimeneko',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'MID',
+        badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/dRwO2AZ.jpg'
     },
     '@ownerShady': {
@@ -371,6 +380,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'замечан за скамом',
         img: 'https://i.imgur.com/jOqFHCa.jpg'
+    },
+    '@traincrime': {
+        info: 'Треинов или же train crime - в коммьюнити вк с 2019 года, в 2023 перебрался пришёл в тг км. Основатель проектов "Поезд Преступлений" (Проект был заблокирован), "Белый Голубь" и "Троянский Конь". Моя деятельность - osint и соц. инженерия. Валидизировал таких личностей как доха, vertov и целер. Сам был валидизирован под личностью также не безызвестной - Михаил Ветров, после чего на месяц или два уходил с просторов телеграма, сейчас вернулся с новыми силами.',
+        channel: 'https://t.me/WhitDeep',
+        dm: 'https://t.me/traincrime',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/UxLLOem.jpg'
     },
             //кодеры жоперы гпт чатеры
     '@RigOlit': {
