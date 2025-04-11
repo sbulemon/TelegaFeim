@@ -342,7 +342,7 @@ const personalities = {
         dm: 'https://t.me/disonov',
         category: 'mid',
         badge: 'badge-FAME',
-        badgeText: 'сред.фейм',
+        badgeText: 'СКАМ',
         img: 'https://i.imgur.com/KZ7UJGr.jpg'
     },
     '@Shiro_Hikari': {
