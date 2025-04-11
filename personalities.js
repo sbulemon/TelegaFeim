@@ -390,6 +390,15 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/UxLLOem.jpg'
     },
+    '@navilov': {
+        info: 'Авилов, пришел в телеграмм комьюнити в конце 2023 года, первую известность приобрел в середине 2024 года, засчет проекта ботнет «Acropolis». Имеет модерки в многих популярных каналах, чатах. На данный момент ведет проект «Paranormal» Известен как OSINT-Специалист.',
+        channel: 'https://t.me/aveparanormal',
+        dm: 'https://t.me/navilov',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/3wAtaHF.jpg'
+    },
             //кодеры жоперы гпт чатеры
     '@RigOlit': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
