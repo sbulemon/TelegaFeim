@@ -164,7 +164,16 @@ const personalities = {
     },
 
     //фейм челы тут я лимон чо за хуйгя пидарасы 
-    '@fuckdoxa': {
+   '@snosray': {
+        info: 'Pianist - с 2018 км я зашёл в км с неймом керосинов, сидел в вк км с 2018 по 2020, 2020-2025 тг км. Прославился своими конфликтами с медийками и феймами.',
+        channel: 'https://t.me/FingersCollect',
+        dm: 'https://t.me/snosray',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/vhV3RMg.jpg'
+    },
+   '@fuckdoxa': {
         info: 'Доха — один из известных личностей в комьюнити, активный игрок в различных активностях и дискуссиях. Один из основателей известного проекта “Последний Вздох”. Участвовал в валидации многих медийных личностей.',
         channel: 'https://t.me/qpuud',
         dm: 'https://t.me/fuckdoxa',
