@@ -60,7 +60,7 @@ const personalities = {
         dm: 'https://t.me/svater',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'яблоки по 0.47 🍏',
         img: 'https://i.imgur.com/Q7gPorf.jpg'
     },
     '@killface': {
