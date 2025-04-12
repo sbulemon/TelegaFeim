@@ -5,7 +5,7 @@ const personalities = {
         dm: 'https://t.me/fuckmefi',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Король',
         img: 'https://i.imgur.com/GAkhf93.jpg'
     },
 
@@ -15,7 +15,7 @@ const personalities = {
         dm: 'https://t.me/chapaevv',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Король',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
     '@waIetov': {
@@ -24,8 +24,17 @@ const personalities = {
         dm: 'https://t.me/waIetov',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Король',
         img: 'https://i.imgur.com/PeFCNMJ.jpg'
+    },
+    '@forcegps': {
+        info: 'Storm - В км нахожусь с конца 2019 года, знал до этого о существовании деанонеров. Пришел с игры Minecraft, больший интерес получил с HvH в CS:GO. Каждая моя личность была успешна и имела фейм, создатель больших проектов: League, Whoami, Maniacalia (2024-2025). Создатель нескольких жвд и террор игр по городам. Провел валидации огромного кол-ва личностей в 2024 летом. Общаюсь с множеством олдовых людей с вк, телеграма. На данный момент не нахожусь в км так-как АФК.',
+        channel: 'https://t.me/maniacalia',
+        dm: 'https://t.me/forcegps',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'Король',
+        img: 'https://i.imgur.com/wzVGPv3.jpg'
     },
     '@oexec': {
         info: 'Тихо - Известен под ником "Тихо". В комьюнити с 23 года (изначально во ВКонтакте). Основатель проекта "Позорники Телеграма о км". Имеет реರ: https://t.me/oexec Имеет репутацию спокойного и рассудительного участника, несмотря на провокационный характер своего проекта.',
@@ -33,7 +42,7 @@ const personalities = {
         dm: 'https://t.me/oexec',
         category: 'top',
         badge: 'badge-tiktok',
-        badgeText: 'TikTok',
+        badgeText: 'TikTok бомж',
         img: 'https://i.imgur.com/rF7MCo9.jpg'
     },
     '@spbmaniac': {
@@ -42,7 +51,7 @@ const personalities = {
         dm: 'https://t.me/spbmaniac',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Король',
         img: 'https://i.imgur.com/uAYfujR.jpg'
     },
     '@psyh6': {
@@ -60,7 +69,7 @@ const personalities = {
         dm: 'https://t.me/svater',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'яблоки по 0.47 🍏',
+        badgeText: 'Бомж яблоки по 0.47 🍏',
         img: 'https://i.imgur.com/Q7gPorf.jpg'
     },
     '@killface': {
@@ -69,7 +78,7 @@ const personalities = {
         dm: 'https://t.me/killface',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'ТОП скам',
         img: 'https://i.imgur.com/Y5WR9Ex.jpg'
     },
     '@MurderRage': {
@@ -78,7 +87,7 @@ const personalities = {
         dm: 'https://t.me/MurderRage',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'ТОП продал лику',
         img: 'https://i.imgur.com/NaX9yTA.jpg'
     },
     '@dimulation': {
