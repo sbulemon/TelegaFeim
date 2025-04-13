@@ -508,6 +508,15 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/KVfhwB5.jpg'
     },
+    '@Sprucefirs': {
+        info: 'Александр Неизбежный – в частности, владелец tooxan и maple. В настоящее время сотрудничает с аукционом пальцев и правоохранительными органами (РФ, Казахстан, Таджикистан). Обладает навыками социальной инженерии, которые, как утверждается, были применены в ситуации с "Акума маркет". Обладает широким кругом деловых связей и опытом работы с различными организациями, включая государственные структуры.',
+        channel: 'https://t.me/programShoping',
+        dm: 'https://t.me/Sprucefirs',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/1hPGco3.jpg'
+    },
     '@chosevv': {
         info: 'FELIX SOFT TOOL был одним из самых популярных софтов среди Telegram-каналов, посвящённых утилитам и инструментам, и получил заметный фейм летом и осенью 2024 года',
         channel: 'https://t.me/FELIXSOFTOOL',
