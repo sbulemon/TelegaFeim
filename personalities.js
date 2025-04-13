@@ -162,15 +162,7 @@ const personalities = {
         badgeText: 'изгой',
         img: 'https://i.imgur.com/raOOO16.jpg'
     },
-    '@agresseve': {
-        info: 'Фимозов - участник, сотрудник, а также основатель многих крупных проектов, к примеру @fimozovshop и @arbat_team. Появился в км весной 23 года, стал известен летом 24 года. Самые популярные работы - по Вячеславу Беверли, Клертову, и отправкой человека к Калашникову. Так же получил славу благодаря тик току.',
-        channel: 'https://t.me/fimozovshop',
-        dm: 'https://t.me/agresseve',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'ТОП',
-        img: 'https://i.imgur.com/ZcVMc3X.jpg'
-    },
+
     '@fallcvt': {
         info: 'CVT - или лучше Criminal Violencet, Violent Crime. Данная Личность появилось  в км 2022 года.   Известно выходками и возможностьями в Км Старая   личность Necto — K0lza. Набрал популярность через основной Necto.Py/dll.module и из за своих возможностей и блага своей Группировке  OneEyeBlade Team ',
         channel: 'https://t.me/notcvt',
@@ -271,6 +263,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'FAME',
         img: 'https://i.imgur.com/a8qE5El.jpg'
+    },
+    '@agresseve': {
+        info: 'Фимозов - участник, сотрудник, а также основатель многих крупных проектов, к примеру @fimozovshop и @arbat_team. Появился в км весной 23 года, стал известен летом 24 года. Самые популярные работы - по Вячеславу Беверли, Клертову, и отправкой человека к Калашникову. Так же получил славу благодаря тик току.',
+        channel: 'https://t.me/fimozovshop',
+        dm: 'https://t.me/agresseve',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/ZcVMc3X.jpg'
     },
     '@d3l3t3dxuser': {
         info: 'Основной никнейм: tizercin. Род занятий: OSINT (разведка по открытым источникам), SOCMINT (анализ социальных сетей), GeoINT (геолокационная разведка), кибербезопасность, анализ данных. Пришел в км в начале 20 года и в этом же году начал свою деятельность.',
