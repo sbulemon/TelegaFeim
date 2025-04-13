@@ -135,6 +135,15 @@ const personalities = {
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
     },
+    '@attackmonolit': {
+        info: 'Монолит - В км появился в 2021 году не имел умений не было фейма, бекнулся в 2024 получил фейма от таких каналов как "Шапито" появились новые умения. Так же монолит ведёт свой канал "Черный Анархист"',
+        channel: 'https://t.me/infomonolit',
+        dm: 'https://t.me/attackmonolit',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'ТОП',
+        img: 'https://i.imgur.com/lrKBxif.jpg'
+    },
     '@swatnite': {
         info: 'Александр Арбат — участник, сотрудник, а также основатель многих проектов. На данный момент сотрудничает с такими проектами как Deviance, Anonymous Kids, Hayden project, Last breath, Gexogenov project, Community news и так далее. Хобби — навещать, а также разукрашивать двери прочим медийным личностям. Самые популярные работы: валидация на Александра Зайцева, а также доставка фаллоимитатора прямиком на дверь Вавилону.',
         channel: 'https://t.me/arbat_team',
@@ -370,7 +379,7 @@ const personalities = {
         category: 'mid',
         badge: 'badge-FAME',
         badgeText: 'сред.фейм',
-        img: 'https://i.imgur.com/WU7BF0x.jpg'
+        img: 'https://i.imgur.com/Z6IhPLy.jpg'
     },
     '@skrapoov': {
         info: 'Skrapov - Появился в км с 2022 года, используя навыки осинта для пробива. Делал выеб на медийку "Кумоникс". Был/являюсь основателем "Инфо поток", "Skype", "Hellbound". Состою в клане Crime.',
