@@ -27,6 +27,15 @@ const personalities = {
         badgeText: 'Король',
         img: 'https://i.imgur.com/PeFCNMJ.jpg'
     },
+    '@tsamulenZ': {
+        info: 'tsamulenZ - ебырь телezрамовских червей', 
+        channel: 'https://t.me/zovclassic',
+        dm: 'https://t.me/tsamulenZ',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'Король',
+        img: 'https://i.imgur.com/LehZspk.jpg'
+    },
     '@forcegps': {
         info: 'Storm - В км нахожусь с конца 2019 года, знал до этого о существовании деанонеров. Пришел с игры Minecraft, больший интерес получил с HvH в CS:GO. Каждая моя личность была успешна и имела фейм, создатель больших проектов: League, Whoami, Maniacalia (2024-2025). Создатель нескольких жвд и террор игр по городам. Провел валидации огромного кол-ва личностей в 2024 летом. Общаюсь с множеством олдовых людей с вк, телеграма. На данный момент не нахожусь в км так-как АФК.',
         channel: 'https://t.me/maniacalia',
