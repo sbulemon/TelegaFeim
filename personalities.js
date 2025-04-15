@@ -509,6 +509,14 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/JkwOcML.jpg'
     },
+    '@wlastilinov': {
+        info: 'wlastilinov - О себе: Кодер - разработчик любых кодов, каждый день дома и каждый день работаю на благо кодов, готов помочь в случае необходимости . Основатель проектов: Recoil Corporation, Лига Безопасности Мирных. Известен в дискорд благодаря писанию ботов для популярных серверов дс таких как: ReallyWorld, AresMine. Сидел на сервере 2chan, 4chan. Спициализируюсь на создании любого программного обеспечения. Стак: HTML, CSS, JavaScript, Python, Docker, SQL, Git, Kubernetes, Soc.Engineering, Revers.Engineering.',        channel: 'https://t.me/recoil_adapter',
+        dm: 'https://t.me/wlastilinov',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://imgur.com/277h8G8.jpg'
+    },
     '@TupoyOle_N': {
         info: '𝕿𝖎𝖒𝖔𝖗𝖎𝖆 - Владелец проектов таких как: Timōría Projects, Hikari, OberonGroup, Spectrum а так же TgSmasher. ',
         channel: 'https://t.me/TupoyOle_N',
