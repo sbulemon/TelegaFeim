@@ -529,7 +529,7 @@
         .modal-close {
             position: absolute;
             top: 20px;
-            left: 20px; /* Перемещено в левый верхний угол */
+            left: 20px; /* Левый верхний угол */
             width: 40px;
             height: 40px;
             background: linear-gradient(45deg, var(--secondary-light), var(--primary-dark));
@@ -1121,6 +1121,55 @@
     <div class="watermark">Медийки Telegram км 2025</div>
 
     <script>
+        // Пример данных (замените на ваш personalities.js)
+        const personalities = {
+            "UserTop": {
+                info: "Один из самых влиятельных лидеров Telegram-комьюнити, известен своими проектами.",
+                img: "https://via.placeholder.com/300x180?text=UserTop",
+                channel: "https://t.me/channel1",
+                dm: "https://t.me/UserTop",
+                category: "top",
+                badge: "badge-top",
+                badgeText: "Топ"
+            },
+            "UserFame": {
+                info: "Популярная личность с активным сообществом и яркими постами.",
+                img: "https://via.placeholder.com/300x180?text=UserFame",
+                channel: "https://t.me/channel2",
+                dm: "https://t.me/UserFame",
+                category: "fame",
+                badge: "badge-fame",
+                badgeText: "Фейм"
+            },
+            "UserMid": {
+                info: "Известен в узких кругах, занимается аналитикой Telegram.",
+                img: "https://via.placeholder.com/300x180?text=UserMid",
+                channel: "https://t.me/channel3",
+                dm: "https://t.me/UserMid",
+                category: "mid",
+                badge: "badge-mid",
+                badgeText: "Средний"
+            },
+            "UserCoder": {
+                info: "Разработчик ботов и инструментов для Telegram.",
+                img: "https://via.placeholder.com/300x180?text=UserCoder",
+                channel: "https://t.me/channel4",
+                dm: "https://t.me/UserCoder",
+                category: "coder",
+                badge: "badge-coder",
+                badgeText: "Кодер"
+            },
+            "UserBomg": {
+                info: "Персона с сомнительной репутацией, связана с мошенничеством.",
+                img: "https://via.placeholder.com/300x180?text=UserBomg",
+                channel: "https://t.me/channel5",
+                dm: "https://t.me/UserBomg",
+                category: "bomg",
+                badge: "badge-bomg",
+                badgeText: "Скамер"
+            }
+        };
+
         // Переменные для фильтра и поиска
         let currentFilter = 'all';
         let currentSearchQuery = '';
@@ -1168,7 +1217,7 @@
             return card;
         }
 
-        // Функция для рендеринга карточек
+ // Функция для рендеринга карточек
         function renderCards(filter = 'all', searchQuery = '') {
             const grid = document.getElementById('card-grid');
             const sectionTitle = document.getElementById('section-title');
@@ -1315,7 +1364,7 @@
 
             const forumBtn = document.querySelector('.forum-btn');
             if (forumBtn) {
-                forumBtn.addEventListener('click', openForumModal);
+                faqBtn.addEventListener('click', openForumModal);
             }
 
             showWelcomeModal();
