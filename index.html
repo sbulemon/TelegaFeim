@@ -524,32 +524,33 @@
             position: relative;
             box-shadow: var(--shadow);
             backdrop-filter: blur(12px);
+            max-height: 80vh; /* Ограничение высоты модального окна */
+            overflow-y: auto; /* Включение вертикальной прокрутки */
         }
 
         .modal-close {
             position: absolute;
             top: 20px;
-            left: 20px; /* Перемещено в левый верхний угол */
-            width: 40px;
-            height: 40px;
+            right: 20px;
+            width: 36px;
+            height: 36px;
             background: linear-gradient(45deg, var(--secondary-light), var(--primary-dark));
-            border: 2px solid var(--primary);
+            border: none;
             border-radius: 50%;
             color: var(--text-light);
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
-            box-shadow: 0 0 10px var(--primary), inset 0 0 5px var(--primary-dark);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             transition: all 0.4s ease;
         }
 
         .modal-close:hover {
             color: var(--primary);
-            transform: rotate(90deg);
-            box-shadow: 0 0 20px var(--primary), inset 0 0 8px var(--primary-dark);
+            transform: rotate(180deg);
+            box-shadow: var(--glow);
             background: var(--primary-dark);
         }
 
@@ -683,37 +684,13 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            max-height: 80vh; /* Ограничение высоты */
+            overflow-y: auto; /* Прокрутка для длинного контента */
         }
 
         @keyframes welcomeAppear {
             from { opacity: 0; transform: scale(0.8) translateY(50px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
-        }
-
-        .welcome-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(45deg, var(--secondary-light), var(--primary-dark));
-            border: none;
-            border-radius: 50%;
-            color: var(--text-light);
-            font-size: 1.4rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: all 0.4s ease;
-        }
-
-        .welcome-close:hover {
-            color: var(--primary);
-            transform: rotate(180deg);
-            box-shadow: var(--glow);
-            background: var(--primary-dark);
         }
 
         .welcome-character {
@@ -1093,9 +1070,11 @@
         </div>
     </div>
 
+    < 并把以下代码插入到合适的位置：
+
     <div class="welcome-modal" id="welcome-modal">
         <div class="welcome-content">
-            <button class="welcome-close" onclick="closeWelcomeModal()"><i class="fas fa-times"></i></button>
+            <button class="modal-close" onclick="closeWelcomeModal()"><i class="fas fa-times"></i></button>
             <div class="welcome-character">
                 <svg class="character-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="30" r="20" fill="var(--primary)" />
@@ -1259,36 +1238,42 @@
             modalShare.href = `https://t.me/share/url?url=${encodeURIComponent(data.channel)}&text=${encodeURIComponent(username)}`;
 
             modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Блокировка прокрутки фона
         }
 
         // Функция для закрытия модального окна
         function closeModal() {
             const modal = document.getElementById('modal');
             modal.classList.remove('active');
+            document.body.style.overflow = ''; // Восстановление прокрутки
         }
 
         // Функция для открытия FAQ
         function openFAQModal() {
             const faqModal = document.getElementById('faq-modal');
             faqModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
         // Функция для закрытия FAQ
         function closeFAQModal() {
             const faqModal = document.getElementById('faq-modal');
             faqModal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         // Функция для открытия форума
         function openForumModal() {
             const forumModal = document.getElementById('forum-modal');
             forumModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
         // Функция для закрытия форума
         function closeForumModal() {
             const forumModal = document.getElementById('forum-modal');
             forumModal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         // Функция для приветственного окна
@@ -1297,6 +1282,7 @@
             if (!hasSeenWelcome) {
                 const welcomeModal = document.getElementById('welcome-modal');
                 welcomeModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
                 sessionStorage.setItem('hasSeenWelcome', 'true');
             }
         }
@@ -1304,6 +1290,7 @@
         function closeWelcomeModal() {
             const welcomeModal = document.getElementById('welcome-modal');
             welcomeModal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         // Обработчики событий
