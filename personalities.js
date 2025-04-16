@@ -509,6 +509,15 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/JkwOcML.jpg'
     },
+    '@CoCisochki': {
+        info: 'Sasiska — разработчик и реверсер, специализирующийся на HTML, Python, C и TypeScript. Известен в узких кругах своими кряками и техническими возможностями. Практикует социальную инженерию и глубокий реверс. Успешно крякал Lemon Tool (x2), Torba Search, а также AlienWare. Имеет опыт в анализе защиты, обходе лицензирования и создании нестандартных решений.',        
+        channel: 'https://t.me/CoCisochki_crack',
+        dm: 'https://t.me/CoCisochki',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://imgur.com/blWxmJH.jpg'
+    },
     '@wlastilinov': {
         info: 'wlastilinov - О себе: Кодер - разработчик любых кодов, каждый день дома и каждый день работаю на благо кодов, готов помочь в случае необходимости . Основатель проектов: Recoil Corporation, Лига Безопасности Мирных. Известен в дискорд благодаря писанию ботов для популярных серверов дс таких как: ReallyWorld, AresMine. Сидел на сервере 2chan, 4chan. Спициализируюсь на создании любого программного обеспечения. Стак: HTML, CSS, JavaScript, Python, Docker, SQL, Git, Kubernetes, Soc.Engineering, Revers.Engineering.',        channel: 'https://t.me/recoil_adapter',
         dm: 'https://t.me/wlastilinov',
