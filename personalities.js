@@ -199,7 +199,7 @@ const personalities = {
         category: 'fame',
         badge: 'badge-FAME',
         badgeText: 'FAME',
-        img: 'https://i.imgur.com/fmcGLTr.jpg'
+        img: 'https://i.imgur.com/hlPDg1G.jpg'
     },
     '@HolyTerov': {
         info: 'HolyTerov (холи) — один из известных личностей в комьюнити, активный игрок в различных активностях и дискуссиях. Главный основатель известного проекта “Последний Вздох”и @defxolu Участвовал в валидации многих мидийных личностей.',
