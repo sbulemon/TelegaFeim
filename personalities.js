@@ -159,7 +159,7 @@ const personalities = {
         dm: 'https://t.me/swatnite',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Замечан за скамом',
         img: 'https://i.imgur.com/eJXp7PW.jpg'
     },
     '@usershat': {
