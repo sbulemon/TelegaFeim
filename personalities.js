@@ -608,10 +608,10 @@ const personalities = {
         badgeText: 'БОМЖ',
         img: 'https://i.imgur.com/MwHiBVw.jpg'
     },
-    '@scamzoid': {
-        info: 'Скамзоид - классический пример скамера. Появился в 2024 году, пытался продавать фейковые базы данных. Был разоблачен и теперь считается изгоем.',
-        channel: 'https://t.me/scamzoid_fake',
-        dm: 'https://t.me/scamzoid',
+    '@covenox': {
+        info: 'нищий изгой скамит на нищий 1$ не доверять пинать хуем он вам нихуя не сделает на личном опыте он доксил физ старого владельца и доказывал валидность - база  ',
+        channel: 'https://t.me/lemon_tool',
+        dm: 'https://t.me/covenox',
         category: 'bomg',
         badge: 'badge-bomg',
         badgeText: 'БОМЖ',
