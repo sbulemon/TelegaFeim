@@ -507,6 +507,16 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://imgur.com/PQS0KHy.jpg'
     },
+    '@inparadoxing': {
+        info: ' пришел в 19 году Был в вк км, имел достачно фейма Начал развиваться с 22 года также, был союз с кислитом и маньяков в 19 году В 24 году регнул Проект  Последний взгляд и начал он развиваться через 2 недели. на данный момент имеется 1.6к сабов'
+        channel: 'https://t.me/fuhet',
+        dm: 'https://t.me/inparadoxing',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://imgur.com/26HqTQx.jpg'
+    },
+    
             //кодеры жоперы гпт чатеры
     '@RigOlit': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
