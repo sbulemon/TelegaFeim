@@ -629,19 +629,19 @@ const personalities = {
         badgeText: 'БОМЖ',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
-    'OSINT': {
-        info: 'добавить свой товар @sbulemon',
-        channel: 'https://t.me/sbulemon',
-        dm: 'https://t.me/sbulemon',
+    'деф от semerkin': {
+        info: 'предоставляю защиту от угроз и скама в виде любых услуг и их применение бесплатно в случае ситуации',
+        channel: 'https://t.me/spbmaniac',
+        dm: 'https://t.me/spbmaniac',
         category: 'product',
         badge: 'badge-product',
-        badgeText: 'Товар',
-        img: '',
-        seller: '@sbulemon',
+        badgeText: 'деф от semerkin',
+        img: 'https://imgur.com/f5VyuAB.jpg',
+        seller: '@spbmaniac',
         prices: {
-            usd: '$5',
-            uah: '2 UAH',
-            rub: '4 RUB'
+            usd: '$10/15',
+            uah: '415/622 UAH',
+            rub: '824/1236 RUB'
         }
     },
     '': {
