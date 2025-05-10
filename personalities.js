@@ -356,7 +356,7 @@ const personalities = {
         dm: 'https://t.me/bogomo10v',
         category: 'fame',
         badge: 'badge-FAME',
-        badgeText: 'FAME',
+        badgeText: 'замечан за скамом',
         img: 'https://i.imgur.com/uy0mX4t.jpg'
     },
     '@disonov': {
