@@ -638,6 +638,15 @@ const personalities = {
         badgeText: 'скам нфт',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
+    '@onuxl': {
+        info: 'wasted/@onuxl скам на обуч',
+        channel: 'https://t.me/lemon_tool',
+        dm: 'https://t.me/onuxl',
+        category: 'bomg',
+        badge: 'badge-bomg',
+        badgeText: 'скам обучения',
+        img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
+    },
     'деф от semerkin': {
         info: 'предоставляю защиту от угроз и скама в виде любых услуг и их применение бесплатно в случае ситуации',
         channel: 'https://t.me/spbmaniac',
