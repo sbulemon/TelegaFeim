@@ -676,5 +676,20 @@ const personalities = {
             uah: '539 UAH',
             rub: '1050 RUB'
         }
+    },
+    'WastedWorldSoft': {
+        info: 'WastedWorldSoft — мощный инструмен для осинта. Имеет свыше 30 функций! Содержит суммарно более 50ТБ баз данных.',
+        channel: 'https://t.me/ElusiveW3b',
+        dm: 'https://t.me/ElusiveW3b',
+        category: 'product',
+        badge: 'badge-product',
+        badgeText: 'осинт програма',
+        img: 'https://imgur.com/hbvhZP4.jpg',
+        seller: '@ElusiveW3b',
+        prices: {
+            usd: '$11',
+            uah: '450 UAH',
+            rub: '850 RUB'
+        }
     }
 };
