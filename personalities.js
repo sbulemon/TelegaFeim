@@ -629,6 +629,15 @@ const personalities = {
         badgeText: 'БОМЖ',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
+    '@xagwu1': {
+        info: '8163607480 / @xagwu1 скам типов на нфт юзы',
+        channel: 'https://t.me/lemon_tool',
+        dm: 'https://t.me/xagwu1',
+        category: 'bomg',
+        badge: 'badge-bomg',
+        badgeText: 'скам нфт',
+        img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
+    },
     'деф от semerkin': {
         info: 'предоставляю защиту от угроз и скама в виде любых услуг и их применение бесплатно в случае ситуации',
         channel: 'https://t.me/spbmaniac',
