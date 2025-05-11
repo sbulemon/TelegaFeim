@@ -123,7 +123,7 @@ const personalities = {
         category: 'top',
         badge: 'badge-top',
         badgeText: 'ТОП',
-        img: 'hhttps://imgur.com/sT1tEO1.jpg'
+        img: 'https://imgur.com/sT1tEO1.jpg'
     },
     '@Friendlypvp': {
         info: '@Friendlypvp - Dr.Steven, основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
