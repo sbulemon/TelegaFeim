@@ -503,6 +503,15 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://imgur.com/PQS0KHy.jpg'
     },
+    '@godximora': {
+        info: 'Появился в комьюнити на личности химора недавно(лето 2024) имею небольшой фейм неплохие совместные работы с известными проектами. Развиваю свой проект - @alchemyadapter .',
+        channel: 'https://t.me/alchemyadapter',
+        dm: 'https://t.me/godximora',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://imgur.com/R5sW1mZ.jpg'
+    },
     '@inparadoxing': {
         info: 'пришел в 19 году Был в вк км, имел достачно фейма Начал развиваться с 22 года также, был союз с кислитом и маньяков в 19 году В 24 году регнул Проект  Последний взгляд и начал он развиваться через 2 недели. на данный момент имеется 1.6к сабов',
         channel: 'https://t.me/fuhet',
@@ -690,6 +699,21 @@ const personalities = {
             usd: '$11',
             uah: '450 UAH',
             rub: '850 RUB'
+        }
+    },
+    'Ximoragod DEF': {
+        info: 'Ximoragod уникальный деф от @godximora лучшый в своем роде, все вопросы ваших конфликтов решаю',
+        channel: 'https://t.me/godximora',
+        dm: 'https://t.me/godximora',
+        category: 'product',
+        badge: 'badge-product',
+        badgeText: 'DEF',
+        img: 'https://imgur.com/O6Ajwe1.jpg',
+        seller: '@godximora',
+        prices: {
+            usd: '$40',
+            uah: '1660 UAH',
+            rub: '3200 RUB'
         }
     }
 };
