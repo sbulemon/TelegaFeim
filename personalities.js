@@ -115,6 +115,15 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/IUHv620.jpg'
+    },    
+    '@pausbd2': {
+        info: 'смешная нарезка детей - @pausbd или же @pausbd2 в км достаточно давно с 2021 но большого Фейма не имел, начал развиваться в 2023, хорошо познакомился с бимом тот меня взял в проект ^голова с плеч^ Чапаев там тоже был, вот в 2024 я был вторым овнером в проекте снялцепи, потом меня сняли я создал свой проект #нарезка потом подружился с локси выкупили канал Шазама новости км ну вот и все',
+        channel: 'https://t.me/afdjij2',
+        dm: 'https://t.me/pausbd2',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'ТОП',
+        img: 'hhttps://imgur.com/sT1tEO1.jpg'
     },
     '@Friendlypvp': {
         info: '@Friendlypvp - Dr.Steven, основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
@@ -142,15 +151,6 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
-    },
-    '@attackmonolit': {
-        info: 'Монолит - В км появился в 2021 году не имел умений не было фейма, бекнулся в 2024 получил фейма, Так же монолит ведёт свой канал "Черный Анархист"',
-        channel: 'https://t.me/infomonolit',
-        dm: 'https://t.me/attackmonolit',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'ТОП',
-        img: 'https://i.imgur.com/lrKBxif.jpg'
     },
     '@swatnite': {
         info: 'Александр Арбат — участник, сотрудник, а также основатель многих проектов. На данный момент сотрудничает с такими проектами как Deviance, Anonymous Kids, Hayden project, Last breath, Gexogenov project, Community news и так далее. Хобби — навещать, а также разукрашивать двери прочим медийным личностям. Самые популярные работы: валидация на Александра Зайцева, а также доставка фаллоимитатора прямиком на дверь Вавилону.',
@@ -340,6 +340,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'FAME',
         img: 'https://i.imgur.com/VkE9DC2.jpg'
+    },
+    '@attackmonolit': {
+        info: 'Монолит - В км появился в 2021 году не имел умений не было фейма, бекнулся в 2024 получил фейма, Так же монолит ведёт свой канал "Черный Анархист"',
+        channel: 'https://t.me/infomonolit',
+        dm: 'https://t.me/attackmonolit',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.imgur.com/lrKBxif.jpg'
     },
     '@dragov_world': {
         info: 'Dragov - влился в комьюнити в конце 21 года. Уже на 2 год он считался медийной личностью. Сейчас он считается одним из самых сильных людей в сфере OSINT-разведки. По касте он сватер, osint | ksint. Также сейчас он создает свое приложение по поиску людей, в котором находится более 200к баз по всему миру. Пока что занимает топ-3 по OSINT.',
