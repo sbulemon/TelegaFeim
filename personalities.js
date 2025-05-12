@@ -53,6 +53,15 @@ const personalities = {
         badgeText: 'Король',
         img: 'https://i.imgur.com/wzVGPv3.jpg'
     },
+    '@patalogonia': {
+        info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
+        channel: 'https://t.me/+OTCIL00MaegxODQy',
+        dm: 'https://t.me/patalogonia',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'ТОП',
+        img: 'https://imgur.com/FNrk6nq.jpg'
+    },
     '@oexec': {
         info: 'Тихо - Известен под ником "Тихо". В комьюнити с 23 года (изначально во ВКонтакте). Основатель проекта "Позорники Телеграма о км". Имеет репутацию спокойного и рассудительного участника, несмотря на провокационный характер своего проекта.',
         channel: 'https://t.me/oexec',
@@ -160,15 +169,6 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'Замечан за скамом',
         img: 'https://i.imgur.com/eJXp7PW.jpg'
-    },
-    '@patalogonia': {
-        info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
-        channel: 'https://t.me/+OTCIL00MaegxODQy',
-        dm: 'https://t.me/patalogonia',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'ТОП',
-        img: 'https://imgur.com/FNrk6nq.jpg'
     },
     '@usershat': {
         info: 'Шат - в комьюнити с 23 года, имеет один из самых крупных проектов cheers dox, обладает хорошими умениями osint, имеет много работ спортиков, провел много валидаций на медийных личностей.',
