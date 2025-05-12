@@ -59,7 +59,7 @@ const personalities = {
         dm: 'https://t.me/patalogonia',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медия Алкаш',
         img: 'https://imgur.com/FNrk6nq.jpg'
     },
     '@oexec': {
