@@ -459,6 +459,15 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/Zmy8pvj.jpg'
     },
+    '@ebakek': {
+        info: 'межкровный - админ @gayadapter, написал известный способ для траффика заявок с помощью фейк чеков в кб, имею узнаваемость для людей из whoami, противкм, госпартии. знаком с феймами как: азотик, цамулен, осипов, сразин, адам, арагонский, антропофобов, семеркин, захюр.',
+        channel: 'https://t.me/gayadapter',
+        dm: 'https://t.me/ebakek',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://imgur.com/QGRvMKq.jpg'
+    },
     '@crimeneko': {
         info: 'Пришел в комьюнити в 2020 году в ВКонтакте, позже перешёл в Telegram. Владелец проекта @news_satanic. Занимается Osint-разведкой. Известен тем, что валидизировал @disonov и Шаз.',
         channel: 'https://t.me/news_satanic',
