@@ -188,6 +188,15 @@ const personalities = {
         badgeText: 'ТОП',
         img: 'https://i.imgur.com/oVsfShC.jpg'
     },
+    '@vkmode': {
+        info: 'плакса, влиятельный человек в км, владелец больших проектов, таких как anonymous kids @godplak, полиция троллинга @police_troll, также плакса имеет свой сносер @guardionsnosbot. Плакса имеет огромное количество связей, у него можно купить все что угодно, от драгов до огнестрела, чувак может найти что угодно.  В км пришел в 2020 году, начал развиваться в вк, в ноябре 2024 пришел в тг под неймом "плакса".',
+        channel: 'https://t.me/bioplak',
+        dm: 'https://t.me/vkmode',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'ТОП',
+        img: 'https://imgur.com/igJdY7v.jpg'
+    },
     '@snosray': {
         info: 'Паренек - с 2018 км зашёл в км с неймом керосинов, сидел в вк км с 2018 по 2020, 2020-2025 тг км. Прославился своими конфликтами с медийками и феймами.',
         channel: 'https://t.me/FingersCollect',
