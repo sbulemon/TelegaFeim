@@ -53,13 +53,13 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/wzVGPv3.jpg'
     },
-    '@patalogonia': {
+    'patalogonia': {
         info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
         channel: 'https://t.me/+OTCIL00MaegxODQy',
         dm: 'https://t.me/patalogonia',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Медийка',
+        badgeText: 'Медийка +',
         img: 'https://imgur.com/FNrk6nq.jpg'
     },
     'Тихо тшш': {
