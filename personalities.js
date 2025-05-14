@@ -5,7 +5,7 @@ const personalities = {
         dm: 'https://t.me/fuckmefi',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/GAkhf93.jpg'
     },
     '@spbmaniac': {
@@ -14,7 +14,7 @@ const personalities = {
         dm: 'https://t.me/spbmaniac',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/uAYfujR.jpg'
     },
     '@chapaevv': {
@@ -23,7 +23,7 @@ const personalities = {
         dm: 'https://t.me/chapaevv',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
     '@waIetov': {
@@ -32,7 +32,7 @@ const personalities = {
         dm: 'https://t.me/waIetov',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/PeFCNMJ.jpg'
     },
     '@tsamulenZ': {
@@ -41,7 +41,7 @@ const personalities = {
         dm: 'https://t.me/tsamulenZ',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/LehZspk.jpg'
     },
     '@forcegps': {
@@ -50,7 +50,7 @@ const personalities = {
         dm: 'https://t.me/forcegps',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Король',
+        badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/wzVGPv3.jpg'
     },
     '@patalogonia': {
@@ -59,7 +59,7 @@ const personalities = {
         dm: 'https://t.me/patalogonia',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Медийка плюс',
+        badgeText: 'Медийка',
         img: 'https://imgur.com/FNrk6nq.jpg'
     },
     '@oexec': {
@@ -68,7 +68,7 @@ const personalities = {
         dm: 'https://t.me/oexec',
         category: 'top',
         badge: 'badge-tiktok',
-        badgeText: 'TikTok бомж',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/rF7MCo9.jpg'
     },
     '@psyh6': {
@@ -77,7 +77,7 @@ const personalities = {
         dm: 'https://t.me/psyh6',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/VImoLhv.jpg'
     },
     '@svater': {
@@ -86,7 +86,7 @@ const personalities = {
         dm: 'https://t.me/svater',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Бомж яблоки по 0.47 🍏',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/Q7gPorf.jpg'
     },
     '@killface': {
@@ -95,7 +95,7 @@ const personalities = {
         dm: 'https://t.me/killface',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП скам',
+        badgeText: 'Медийка скам',
         img: 'https://i.imgur.com/Y5WR9Ex.jpg'
     },
     '@MurderRage': {
@@ -104,7 +104,7 @@ const personalities = {
         dm: 'https://t.me/MurderRage',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП продал лику',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/NaX9yTA.jpg'
     },
     '@dimulation': {
@@ -113,7 +113,7 @@ const personalities = {
         dm: 'https://t.me/dimulation',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/dEG7GFR.jpg'
     },
     '@attackskype': {
@@ -122,7 +122,7 @@ const personalities = {
         dm: 'https://t.me/attackskype',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/IUHv620.jpg'
     },    
     '@pausbd2': {
@@ -131,7 +131,7 @@ const personalities = {
         dm: 'https://t.me/pausbd2',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://imgur.com/sT1tEO1.jpg'
     },
     '@Friendlypvp': {
@@ -140,7 +140,7 @@ const personalities = {
         dm: 'https://t.me/Friendlypvp',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/gGwa3Ei.jpg'
     },
     '@KrakenRevenge': {
@@ -149,7 +149,7 @@ const personalities = {
         dm: 'https://t.me/KrakenRevenge',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/kET9Yrw.jpg'
     },
     '@desertAttack': {
@@ -158,7 +158,7 @@ const personalities = {
         dm: 'https://t.me/desertAttack',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
     },
     '@swatnite': {
@@ -167,7 +167,7 @@ const personalities = {
         dm: 'https://t.me/swatnite',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'Замечан за скамом',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/eJXp7PW.jpg'
     },
     '@usershat': {
@@ -176,7 +176,7 @@ const personalities = {
         dm: 'https://t.me/usershat',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'изгой',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/raOOO16.jpg'
     },
     '@fallcvt': {
@@ -185,7 +185,7 @@ const personalities = {
         dm: 'https://t.me/fallcvt',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://i.imgur.com/oVsfShC.jpg'
     },
     '@vkmode': {
@@ -194,9 +194,10 @@ const personalities = {
         dm: 'https://t.me/vkmode',
         category: 'top',
         badge: 'badge-top',
-        badgeText: 'ТОП',
+        badgeText: 'Медийка',
         img: 'https://imgur.com/igJdY7v.jpg'
     },
+//фейм прсто юююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююыывфвфвфв секс дайте  в рот пж
     '@snosray': {
         info: 'Паренек - с 2018 км зашёл в км с неймом керосинов, сидел в вк км с 2018 по 2020, 2020-2025 тг км. Прославился своими конфликтами с медийками и феймами.',
         channel: 'https://t.me/FingersCollect',
