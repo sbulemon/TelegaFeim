@@ -1,5 +1,5 @@
 const personalities = {
-    '@fuckmefi': {
+    'Мефи': {
         info: 'Мефи - В комьюнити очень давно, имеет один из самых крупных проектов. Обладает наибольшим феймом среди всех. Основатель проекта "Белый Аист". Провел множество валидаций известных медийных личностей, включая Евгения Вавилонова, Алчность, Тихо и других. Известен своей активной позицией и влиянием в сообществе. Не скрывает свои данные с 2022 года. На данный момент является лицом СНГ комьюнити.',
         channel: 'https://t.me/BelBusel',
         dm: 'https://t.me/fuckmefi',
@@ -8,7 +8,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/GAkhf93.jpg'
     },
-    '@spbmaniac': {
+    'Semerk!n': {
         info: 'Также известен как "Семеркин". Появился в комьюнити ВКонтакте в 2020 году. Создатель проекта "Правда о км". Приобрел популярность благодаря серии интервью с известными медийными личностями. Известен своей активной гражданской позицией и критическим взглядом на происходящее в сообществе.',
         channel: 'https://t.me/trueaboutcm',
         dm: 'https://t.me/spbmaniac',
@@ -17,7 +17,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/uAYfujR.jpg'
     },
-    '@chapaevv': {
+    'чапаев': {
         info: 'Чапаев - Один из самых медийных личностей в комьюнити, владелец нескольких крупных проектов. Активный участник различных событий и обсуждений. Основатель популярного проекта "Шапито". Провел валидации многих медийных личностей. В редких случаях был замешан в спорных ситуациях, связанных с небольшими суммами денег.',
         channel: 'https://t.me/chapaevv',
         dm: 'https://t.me/chapaevv',
@@ -26,7 +26,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
-    '@waIetov': {
+    'Валетов': {
         info: 'Валетов - Согласно независимым рейтингам и telegraph отчетам @waIetov начиная с 2019 года, стабильно занимает позицию лидера в списке лучших сносеров СНГ и Европы. За период с 2019 по 2025 год, деятельность @waIetov привела к прекращению существования значительного числа кланов и различных проектов, что подтверждается его работами.',
         channel: 'https://t.me/chapaevv',
         dm: 'https://t.me/waIetov',
@@ -35,7 +35,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/PeFCNMJ.jpg'
     },
-    '@tsamulenZ': {
+    'цамуленко': {
         info: 'tsamulenZ - ебырь телezрамовских червей',
         channel: 'https://t.me/zovclassic',
         dm: 'https://t.me/tsamulenZ',
@@ -44,7 +44,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/LehZspk.jpg'
     },
-    '@forcegps': {
+    'Storm': {
         info: 'Storm - В км нахожусь с конца 2019 года, знал до этого о существовании деанонеров. Пришел с игры Minecraft, больший интерес получил с HvH в CS:GO. Каждая моя личность была успешна и имела фейм, создатель больших проектов: League, Whoami, Maniacalia (2024-2025). Создатель нескольких жвд и террор игр по городам. Провел валидации огромного кол-ва личностей в 2024 летом. Общаюсь с множеством олдовых людей с вк, телеграма. На данный момент не нахожусь в км так-как АФК.',
         channel: 'https://t.me/maniacalia',
         dm: 'https://t.me/forcegps',
@@ -62,7 +62,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://imgur.com/FNrk6nq.jpg'
     },
-    '@oexec': {
+    'Тихо тшш': {
         info: 'Тихо - Известен под ником "Тихо". В комьюнити с 23 года (изначально во ВКонтакте). Основатель проекта "Позорники Телеграма о км". Имеет репутацию спокойного и рассудительного участника, несмотря на провокационный характер своего проекта.',
         channel: 'https://t.me/oexec',
         dm: 'https://t.me/oexec',
@@ -80,7 +80,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/VImoLhv.jpg'
     },
-    '@svater': {
+    '#снялсцепи': {
         info: 'бомж появился в 2025 продавал яблока до 2025 также ебанашка 2010 момет скам а также сын хуеты не доверяйте хуярьте ногами, ps @svater хочешь изменить текст ябки по 0.20 с тебя',
         channel: 'https://t.me/svater',
         dm: 'https://t.me/svater',
@@ -89,7 +89,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/Q7gPorf.jpg'
     },
-    '@killface': {
+    'killface': {
         info: 'killface появился в комьюнити в 2021 году. Основатель проекта Komaru Dark (Информация X). Стал медийным благодаря масштабным эвакуациям по территории РФ и глубоким знаниям в области OSINT.',
         channel: 'https://t.me/killface',
         dm: 'https://t.me/killface',
@@ -116,7 +116,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/dEG7GFR.jpg'
     },
-    '@attackskype': {
+    'Психо': {
         info: 'Психо / ᴘsʏʜᴏ Авторитарность Руководитель группировки «Кровавый след». Занимается ликвидированием и разоблачением медийных личностей.',
         channel: 'https://t.me/+VbQxGzvZLqU1OTE0',
         dm: 'https://t.me/attackskype',
@@ -125,7 +125,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/IUHv620.jpg'
     },    
-    '@pausbd2': {
+    'смешная нарезка детей': {
         info: 'смешная нарезка детей - @pausbd или же @pausbd2 в км достаточно давно с 2021 но большого Фейма не имел, начал развиваться в 2023, хорошо познакомился с бимом тот меня взял в проект ^голова с плеч^ Чапаев там тоже был, вот в 2024 я был вторым овнером в проекте снялцепи, потом меня сняли я создал свой проект #нарезка потом подружился с локси выкупили канал Шазама новости км ну вот и все',
         channel: 'https://t.me/afdjij2',
         dm: 'https://t.me/pausbd2',
@@ -134,7 +134,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://imgur.com/sT1tEO1.jpg'
     },
-    '@Friendlypvp': {
+    'Dr.Steven': {
         info: '@Friendlypvp - Dr.Steven, основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
         channel: 'https://t.me/StevenAdapter',
         dm: 'https://t.me/Friendlypvp',
@@ -143,7 +143,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/gGwa3Ei.jpg'
     },
-    '@KrakenRevenge': {
+    'Kraken': {
         info: 'Kraken - пришел в 2021 году, стал известен после 22 года. Занимался изначально сватингом, а после разоблачением и разбором личностей. Администратор "Белый Аист", со-владелец "противкм", со-владелец "шлюхикм".',
         channel: 'https://t.me/BelBusel',
         dm: 'https://t.me/KrakenRevenge',
@@ -152,7 +152,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/kET9Yrw.jpg'
     },
-    '@desertAttack': {
+    'Kalashnikov': {
         info: 'Kalashnikov, aka Dmitry maniac - пришел в 2017 году, был дизайнером и войсером, стал известен после 21 года. Телеграм комьюнити началось с 21 года, стал изучать другие термины. Потом начал реализовать свои крупнейшие проекты с 22 года, а точнее: Blood cartel, Asgard с Антиповым, Трайбол, Водяной знак. На данный момент проектов на 50к++. Известен мастерством осинт поиска, сетевого трафика.',
         channel: 'https://t.me/overAdapter',
         dm: 'https://t.me/desertAttack',
@@ -161,7 +161,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
     },
-    '@swatnite': {
+    'Арбат': {
         info: 'Александр Арбат — участник, сотрудник, а также основатель многих проектов. На данный момент сотрудничает с такими проектами как Deviance, Anonymous Kids, Hayden project, Last breath, Gexogenov project, Community news и так далее. Хобби — навещать, а также разукрашивать двери прочим медийным личностям. Самые популярные работы: валидация на Александра Зайцева, а также доставка фаллоимитатора прямиком на дверь Вавилону.',
         channel: 'https://t.me/arbat_team',
         dm: 'https://t.me/swatnite',
@@ -170,7 +170,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/eJXp7PW.jpg'
     },
-    '@usershat': {
+    'Шат': {
         info: 'Шат - в комьюнити с 23 года, имеет один из самых крупных проектов cheers dox, обладает хорошими умениями osint, имеет много работ спортиков, провел много валидаций на медийных личностей.',
         channel: 'https://t.me/cheersdox',
         dm: 'https://t.me/usershat',
@@ -179,7 +179,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/raOOO16.jpg'
     },
-    '@fallcvt': {
+    'CVT': {
         info: 'CVT - или лучше Criminal Violencet, Violent Crime. Данная Личность появилось  в км 2022 года.   Известно выходками и возможностьями в Км Старая   личность Necto — K0lza. Набрал популярность через основной Necto.Py/dll.module и из за своих возможностей и блага своей Группировке  OneEyeBlade Team ',
         channel: 'https://t.me/notcvt',
         dm: 'https://t.me/fallcvt',
@@ -188,7 +188,7 @@ const personalities = {
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/oVsfShC.jpg'
     },
-    '@vkmode': {
+    'Плакса': {
         info: 'плакса, влиятельный человек в км, владелец больших проектов, таких как anonymous kids @godplak, полиция троллинга @police_troll, также плакса имеет свой сносер @guardionsnosbot. Плакса имеет огромное количество связей, у него можно купить все что угодно, от драгов до огнестрела, чувак может найти что угодно.  В км пришел в 2020 году, начал развиваться в вк, в ноябре 2024 пришел в тг под неймом "плакса".',
         channel: 'https://t.me/bioplak',
         dm: 'https://t.me/vkmode',
@@ -288,7 +288,7 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/a8qE5El.jpg'
     },
-    '@agresseve': {
+    'Фимозов': {
         info: 'Фимозов - участник, сотрудник, а также основатель многих крупных проектов, к примеру @fimozovshop и @arbat_team. Появился в км весной 23 года, стал известен летом 24 года. Самые популярные работы - по Вячеславу Беверли, Клертову, и отправкой человека к Калашникову. Так же получил славу благодаря тик току.',
         channel: 'https://t.me/fimozovshop',
         dm: 'https://t.me/agresseve',
@@ -296,6 +296,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'FAME',
         img: 'https://i.imgur.com/ZcVMc3X.jpg'
+    },
+    'Bruce Cart': {
+        info: 'сам в комьюнити не состою, но известен в некоторых кругах, стоял во многих чатах на админке, содержу свой форум в тг.',
+        channel: 'https://t.me/BruceCart',
+        dm: 'https://t.me/w3brocket',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://imgur.com/ufAYxyn.jpg'
     },
     '@d3l3t3dxuser': {
         info: 'Основной никнейм: tizercin. Род занятий: OSINT (разведка по открытым источникам), SOCMINT (анализ социальных сетей), GeoINT (геолокационная разведка), кибербезопасность, анализ данных. Пришел в км в начале 20 года и в этом же году начал свою деятельность.',
