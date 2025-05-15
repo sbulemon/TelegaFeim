@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медийные личности Telegram</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/telegram-app--v1.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<script>
+// Сохранение и применение темы
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        document.body.className = savedTheme;
+    }
+
+    document.querySelectorAll('[data-theme]').forEach(item => {
+        item.addEventListener('click', () => {
+            const theme = item.getAttribute('data-theme');
+            document.body.className = theme;
+            localStorage.setItem('selectedTheme', theme);
+        });
+    });
+
+    // Показываем объявление только один раз
+    if (!localStorage.getItem('announcementShown')) {
+        document.getElementById("announcement-modal").classList.add("active");
+        localStorage.setItem('announcementShown', 'true');
+    }
+
+    // Закрытие модального окна объявления
+    window.openAnnouncementModal = function () {
+        if (!localStorage.getItem('announcementShown')) {
+            document.getElementById("announcement-modal").classList.add("active");
+            localStorage.setItem('announcementShown', 'true');
+        }
+    };
+
+    window.closeAnnouncementModal = function () {
+        document.getElementById("announcement-modal").classList.remove("active");
+        document.body.style.overflow = '';
+        renderCards(currentFilter, currentSearchQuery);
+    };
+
+    // Закрытие при пагинации
+    const prevBtn = document.getElementById("prev-page");
+    const nextBtn = document.getElementById("next-page");
+    if (prevBtn) prevBtn.addEventListener("click", closeAnnouncementModal);
+    if (nextBtn) nextBtn.addEventListener("click", closeAnnouncementModal);
+});
+</script>
+<body class="theme-hacker">
+    <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container">
+        <header class="header fade-in">
+            <h2>Медийные личности Telegram</h2>
+            <img src="https://gen.jut.su/chakranature/background/anime/code-geass.dark.jpg" alt="Code Geass Background" class="header-img" loading="lazy" width="750" height="400">
+            <p>Справочник известных личностей Telegram с информацией о них и их проектах</p>
+        </header>
+
+        <div class="search-container fade-in">
+            <input type="text" id="search-input" placeholder="Поиск по нику или описанию..." class="search-input">
+            <button class="search-btn"><img src="https://img.icons8.com/ios-filled/24/search--v1.png" alt="Search" class="icon"></button>
+        </div>
+
+        <div class="control-panel fade-in">
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    <img src="https://img.icons8.com/ios-filled/24/filter--v1.png" alt="Filter" class="icon"> Фильтровать
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" data-category="all"><img src="https://img.icons8.com/ios-filled/24/globe--v1.png" alt="All" class="icon"> Все</div>
+                    <div class="dropdown-item" data-category="top"><img src="https://img.icons8.com/ios-filled/24/star--v1.png" alt="Top" class="icon"> Топ медийки</div>
+                    <div class="dropdown-item" data-category="fame"><img src="https://img.icons8.com/ios-filled/24/fire-element.png" alt="Fame" class="icon"> Фейм</div>
+                    <div class="dropdown-item" data-category="mid"><img src="https://img.icons8.com/ios-filled/24/groups.png" alt="Mid" class="icon"> Средний фейм</div>
+                    <div class="dropdown-item" data-category="coder"><img src="https://img.icons8.com/ios-filled/24/source-code.png" alt="Coder" class="icon"> Кодеры</div>
+                    <div class="dropdown-item" data-category="bomg"><img src="https://img.icons8.com/ios-filled/24/skull.png" alt="Bomg" class="icon"> БОМЖеры</div>
+                    <div class="dropdown-item" data-category="product"><img src="https://img.icons8.com/ios-filled/24/shopping-cart.png" alt="Product" class="icon"> Товары</div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    <img src="https://img.icons8.com/ios-filled/24/paint-palette.png" alt="Theme" class="icon"> Выбрать тему
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" data-theme="theme-hacker"><i class="fas fa-code icon"></i> Зеленая</div>
+                    <div class="dropdown-item" data-theme="theme-red"><i class="fas fa-fire icon"></i> Красная</div>
+                    <div class="dropdown-item" data-theme="theme-purple"><i class="fas fa-hat-wizard icon"></i> Фиолетовая</div>
+                    <div class="dropdown-item" data-theme="theme-cyber-blue"><i class="fas fa-water icon"></i> Синяя</div>
+                    <div class="dropdown-item" data-theme="theme-neon-pink"><i class="fas fa-heart icon"></i> Розовая</div>
+                    <div class="dropdown-item" data-theme="theme-yellow"><i class="fas fa-sun icon"></i> Желтая</div>
+                    <div class="dropdown-item" data-theme="theme-rgb"><i class="fas fa-rainbow icon"></i> RGB</div>
+                    <div class="dropdown-item" data-theme="theme-retro"><i class="fas fa-gamepad icon"></i> Ретро</div>
+                    <div class="dropdown-item" data-theme="theme-minimal"><i class="fas fa-border-none icon"></i> Минимализм</div>
+                    <div class="dropdown-item" data-theme="theme-neon"><i class="fas fa-bolt icon"></i> Неон</div>
+                    <div class="color-picker"><span>Свои цвета:</span> <input type="color" id="primary-color-picker" title="Основной цвет"><button id="reset-color" style="margin-left:8px;">Сбросить</button></div>
+                </div>
+            </div>
+
+            <button class="support-btn" id="toggle-animations-btn" style="min-width:180px;">
+                <img src="https://img.icons8.com/ios-filled/24/stop-circled.png" alt="Anim" class="icon"> Отключить анимации
+            </button>
+
+            <a href="https://t.me/sbulemon" target="_blank" class="support-btn">
+                <img src="https://img.icons8.com/ios-filled/24/help.png" alt="Support" class="icon"> Тех. поддержка
+            </a>
+
+            <a href="http://t.me/send?start=IVapx24CNIkl" target="_blank" class="support-btn">
+                <img src="https://img.icons8.com/ios-filled/24/coins.png" alt="Donate" class="icon"> Поддержать проект
+            </a>
+
+            <button class="support-btn faq-btn">
+                <img src="https://img.icons8.com/ios-filled/24/question-mark.png" alt="FAQ" class="icon"> FAQ
+            </button>
+
+            <button class="support-btn forum-btn">
+                <img src="https://img.icons8.com/ios-filled/24/speech-bubble.png" alt="Forum" class="icon"> Форум
+            </button>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination-btn" id="prev-page" disabled onclick="closeAnnouncementModal()"><img src="https://img.icons8.com/ios-filled/24/chevron-left.png" alt="Previous" class="icon"></button>
+            <div class="pagination-info" id="pagination-info">Страница 1 из 6</div>
+            <button class="pagination-btn" id="next-page" onclick="closeAnnouncementModal()"><img src="https://img.icons8.com/ios-filled/24/chevron-right.png" alt="Next" class="icon"></button>
+        </div>
+
+        <section class="section fade-in">
+            <h2 class="section-title" id="section-title">Топ медийки</h2>
+            <div class="grid" id="card-grid"></div>
+        </section>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
+            <div class="modal-img-container"><img id="modal-img" src="" alt="Фото" class="modal-img"></div>
+            <h2 class="modal-title" id="modal-username"></h2>
+            <p class="modal-text" id="modal-info"></p>
+            <div class="modal-price" id="modal-price"></div>
+            <div class="modal-actions">
+                <a href="#" class="modal-btn modal-btn-primary" id="modal-channel" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Открыть канал
+                </a>
+                <a href="#" class="modal-btn modal-btn-secondary" id="modal-dm" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/filled-message.png" alt="Message" class="icon"> Написать в ЛС
+                </a>
+                <a href="#" class="modal-btn modal-btn-secondary" id="modal-share" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/share.png" alt="Share" class="icon"> Поделиться
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="faq-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeFAQModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
+            <h2 class="modal-title"><img src="https://img.icons8.com/ios-filled/24/question-mark.png" alt="FAQ" class="icon"> FAQ - Категории</h2>
+            <div class="modal-text">
+                <p><strong>Топ медийки</strong> – Лидеры Telegram-комьюнити с высоким влиянием и репутацией.</p>
+                <p><strong>Фейм</strong> – Популярные личности с активным сообществом и узнаваемостью.</p>
+                <p><strong>Средний фейм</strong> – Известные в узких кругах участники Telegram.</p>
+                <p><strong>Кодеры</strong> – Разработчики, создающие инструменты для комьюнити.</p>
+                <p><strong>БОМЖеры</strong> – Персоны с сомнительной репутацией, связанной с мошенничеством.</p>
+                <p><strong>Товары</strong> – Продукты и услуги от проверенных лиц комьюнити.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="forum-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeForumModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
+            <h2 class="modal-title"><img src="https://img.icons8.com/ios-filled/24/speech-bubble.png" alt="Forum" class="icon"> Форум</h2>
+            <p class="modal-text">Форум предназначен для добавления в лист медийных личностей Telegram.</p>
+            <div class="modal-actions">
+                <a href="https://t.me/+I10bvYava88yYzIy" class="modal-btn modal-btn-primary" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Открыть форум
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="announcement-modal" id="announcement-modal">
+        <div class="announcement-content">
+            <button class="modal-close" onclick="closeAnnouncementModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
+            <h2 class="announcement-title">Объявление</h2>
+            <div class="announcement-text">
+                <p>Принимаем товары на сайт от <strong>проверенных лиц</strong>!<br>
+                Разместите свой продукт в категории "Товары" уже сегодня.<br>
+                <div class="price-container">
+    <div class="price-item">
+        <i class="fab fa-usdt icon" style="color:#26a17b;"></i>
+        <span>1 USDT</span>
+    </div>
+    <div class="price-item">
+        <i class="fas fa-hryvnia icon" style="color:#ffd700;"></i>
+        <span>41 UAH</span>
+    </div>
+    <div class="price-item">
+        <i class="fas fa-ruble-sign icon" style="color:#f44336;"></i>
+        <span>97 RUB</span>
+    </div>
+</div>
+                Для подачи заявки пишите в ЛС: <a href="https://t.me/fametgs" style="color: var(--primary); text-decoration: none;">@fametgs</a>
+                </p>
+            </div>
+            <div class="announcement-actions">
+                <a href="https://t.me/fametgs" class="modal-btn modal-btn-primary" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Подать заявку
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome-modal" id="welcome-modal">
+        <div class="welcome-content">
+            <button class="modal-close" onclick="closeWelcomeModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
+            <div class="welcome-character">
+                <svg class="character-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="30" r="20" fill="var(--primary)" />
+                    <rect x="40" y="50" width="20" height="30" fill="var(--secondary-light)" />
+                    <rect x="60" y="50" width="10" height="20" fill="var(--primary-dark)" class="arm" />
+                    <rect x="30" y="50" width="10" height="20" fill="var(--primary-dark)" class="arm" />
+                    <circle cx="45" cy="25" r="3" fill="var(--text-light)" />
+                    <circle cx="55" cy="25" r="3" fill="var(--text-light)" />
+                    <path d="M45 35 Q50 40 55 35" fill="none" stroke="var(--text-light)" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="welcome-text">
+                <p>Привет, бро! Ты попал на сайт по медийным личностям. Сайт только в бета-версии, не суди строго :)<br>Если ты хочешь попасть на сайт, нажми кнопку "Форум". Удачки тебе, дорогой друг!<br><strong>PS: @fametgs</strong></p>
+            </div>
+            <div class="welcome-actions">
+                <a href="https://t.me/+I10bvYava88yYzIy" class="welcome-btn" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Форум
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="watermark">Медийки Telegram км 2025</div>
+
+    <div class="loader" id="loader" style="display:none;">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <script src="personalities.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+    // --- Логика бургер-меню ---
+    const burgerMenu = document.getElementById('burger-menu');
+    const controlPanel = document.querySelector('.control-panel');
+    burgerMenu.addEventListener('click', () => {
+        controlPanel.classList.toggle('active');
+    });
+    // --- Color Picker ---
+    const colorPicker = document.getElementById('primary-color-picker');
+    const resetColorBtn = document.getElementById('reset-color');
+
+    function hexToHSL(H) {
+        // Convert hex to HSL for darken
+        let r = 0, g = 0, b = 0;
+        if (H.length == 4) {
+            r = "0x"+H[1]+H[1];
+            g = "0x"+H[2]+H[2];
+            b = "0x"+H[3]+H[3];
+        } else if (H.length == 7) {
+            r = "0x"+H[1]+H[2];
+            g = "0x"+H[3]+H[4];
+            b = "0x"+H[5]+H[6];
+        }
+        r /= 255; g /= 255; b /= 255;
+        let cmin = Math.min(r,g,b), cmax = Math.max(r,g,b), delta = cmax - cmin, h = 0, s = 0, l = 0;
+        if (delta == 0) h = 0;
+        else if (cmax == r) h = ((g-b)/delta)%6;
+        else if (cmax == g) h = (b-r)/delta+2;
+        else h = (r-g)/delta+4;
+        h = Math.round(h*60);
+        if (h<0) h+=360;
+        l = (cmax+cmin)/2;
+        s = delta==0 ? 0 : delta/(1-Math.abs(2*l-1));
+        s = +(s*100).toFixed(1);
+        l = +(l*100).toFixed(1);
+        return {h,s,l};
+    }
+    function darkenHSL({h,s,l}, percent) {
+        l = Math.max(0, l-percent);
+        return `hsl(${h},${s}%,${l}%)`;
+    }
+    colorPicker.addEventListener('input', (e) => {
+        const color = e.target.value;
+        document.documentElement.style.setProperty('--primary', color);
+        // Сделаем --primary-dark чуть темнее
+        const hsl = hexToHSL(color);
+        const dark = darkenHSL(hsl, 20);
+        document.documentElement.style.setProperty('--primary-dark', dark);
+        localStorage.setItem('customPrimary', color);
+        localStorage.setItem('customPrimaryDark', dark);
+        localStorage.setItem('selectedTheme', 'custom');
+    });
+    resetColorBtn.addEventListener('click', () => {
+        localStorage.removeItem('customPrimary');
+        localStorage.removeItem('customPrimaryDark');
+        localStorage.removeItem('selectedTheme');
+        location.reload();
+    });
+    // Восстановление цвета при загрузке
+    const customPrimary = localStorage.getItem('customPrimary');
+    const customPrimaryDark = localStorage.getItem('customPrimaryDark');
+    if (customPrimary) {
+        document.documentElement.style.setProperty('--primary', customPrimary);
+        if (customPrimaryDark) {
+            document.documentElement.style.setProperty('--primary-dark', customPrimaryDark);
+        }
+        colorPicker.value = customPrimary;
+    }
+    // --- Лоадер ---
+    function showLoader() {
+        document.getElementById('loader').style.display = 'flex';
+    }
+    function hideLoader() {
+        document.getElementById('loader').style.display = 'none';
+    }
+    let uahIcon = '₴';
+    </script>
+
+    <style>
+    body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.08;
+        background: url('https://www.transparenttextures.com/patterns/noise.png');
+    }
+    .glow-spot {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #00ff99 0%, transparent 80%);
+        filter: blur(60px);
+        opacity: 0.18;
+        top: 10%;
+        left: 60%;
+        pointer-events: none;
+        z-index: 0;
+        animation: moveGlow 12s infinite alternate;
+    }
+    @keyframes moveGlow {
+        0% { top: 10%; left: 60%; }
+        100% { top: 30%; left: 70%; }
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        transition: background 0.7s, color 0.7s;
+    }
+    </style>
+
+</body>
+</html>
