@@ -53,6 +53,15 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/wzVGPv3.jpg'
     },
+    'Онегин': {
+        info: 'Онегин, пришел в комьюнити в 2021 году, первую популярность набрал ближе к началу 2023, после ушел на небольшой перерыв, и недавно вернулсяся. Самый успешный проект это Hatred, Merediana. Стал известен как осинт-специалист, лжеминер',
+        channel: 'https://t.me/meredianadoxing',
+        dm: 'https://t.me/truesexme',
+        category: 'top',
+        badge: 'badge-top',
+        badgeText: 'Медийка',
+        img: 'https://cdn.pixabay.com/photo/2017/11/25/12/46/tree-2976739_1280.jpg'
+    },
     'patalogonia': {
         info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
         channel: 'https://t.me/+OTCIL00MaegxODQy',
