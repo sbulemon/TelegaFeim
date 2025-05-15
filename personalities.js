@@ -177,7 +177,7 @@ const personalities = {
         category: 'top',
         badge: 'badge-top',
         badgeText: 'Медийка',
-        img: 'https://i.imgur.com/eJXp7PW.jpg'
+        img: 'https://imgur.com/I83ELpg.jpg'
     },
     'Шат': {
         info: 'Шат - в комьюнити с 23 года, имеет один из самых крупных проектов cheers dox, обладает хорошими умениями osint, имеет много работ спортиков, провел много валидаций на медийных личностей.',
