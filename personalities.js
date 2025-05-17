@@ -666,6 +666,15 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/PJvBIeg.jpg'
     },
+    'ховлер': {
+        info: 'ховлер - python кодер, владелец софта lathos. Пришел в эту сферу в 2023 году, и с тех пор активно развиваюсь в этом направлении. ',
+        channel: 'https://t.me/lathosproject',
+        dm: 'https://t.me/attackpenis',
+        category: 'coder',
+        badge: 'badge-coder',
+        badgeText: 'CODER',
+        img: 'https://i.imgur.com/B1Iz3W4.mp4'
+    },
     'Мефосквит': {
         info: 'Мефосквит - талантливый разработчик, создатель TOKLOM, TOKLOM FREE, HIMARS, HIMARS FREE и многих других проектов. Известен своими техническими решениями и вкладом в развитие инструментов для сообщества.',
         channel: 'https://t.me/vkmef',
