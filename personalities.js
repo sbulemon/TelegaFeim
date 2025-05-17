@@ -673,7 +673,7 @@ const personalities = {
         category: 'coder',
         badge: 'badge-coder',
         badgeText: 'CODER',
-        img: 'https://i.imgur.com/B1Iz3W4.mp4'
+        img: 'https://i.imgur.com/DrjJxQQ.jpeg'
     },
     'Мефосквит': {
         info: 'Мефосквит - талантливый разработчик, создатель TOKLOM, TOKLOM FREE, HIMARS, HIMARS FREE и многих других проектов. Известен своими техническими решениями и вкладом в развитие инструментов для сообщества.',
