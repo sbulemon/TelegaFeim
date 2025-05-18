@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a url('https://cdn-kz.kursiv.media/wp-content/uploads/2025/05/img_8458-1024x576.jpeg?utm_source=in_materials') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            text-shadow: 0 0 10px #00ffcc;
+            color: #00ffcc;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #b3b3b3;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #00ffcc, #00cccc);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        a:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 255, 204, 0.4);
+        }
+        #catThreat {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+            color: #ff9999;
+        }
+        #catThreat.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Мяу-мяу, хакер! Я, кот OKAK, спрятал твою страницу в своём лотке!</p>
+        <p>У тебя 9 кошачьих жизней, чтобы вернуться, или я начну мурлыкать "Хакерская полька"!</p>
+        <a href="/" id="homeButton">На главную (мяу, не зли меня!)</a>
+        <div id="catThreat"></div>
+    </div>
+    <script>
+        const button = document.getElementById('homeButton');
+        const threatDiv = document.getElementById('catThreat');
+        const catThreats = [
+            "Я украду твой интернет, хакер!",
+            "Мяу начну спамить тебе кошачьими мемами!",
+            "OKAK, я уже точу когти о твой роутер!",
+            "Ща замурлыкаю так, что сервер упадёт!",
+            "У тебя 5 секунд, или я съем твой пароль!"
+        ];
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const randomThreat = catThreats[Math.floor(Math.random() * catThreats.length)];
+            threatDiv.textContent = randomThreat;
+            threatDiv.classList.add('show');
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
