@@ -17,7 +17,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/uAYfujR.jpg'
     },
-    'чапаев': {
+    'чапаев скам': {
         info: 'Чапаев - Один из самых медийных личностей в комьюнити, владелец нескольких крупных проектов. Активный участник различных событий и обсуждений. Основатель популярного проекта "Шапито". Провел валидации многих медийных личностей. Зачастую замешан в спорных ситуациях на крупную сумму денег.',
         channel: 'https://t.me/chapaevv',
         dm: 'https://t.me/chapaevv',
@@ -25,15 +25,6 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'Главная Медийка',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
-    },
-    'цамуленко': {
-        info: 'tsamulenZ - ебырь телezрамовских червей',
-        channel: 'https://t.me/zovclassic',
-        dm: 'https://t.me/tsamulenZ',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'Главная Медийка',
-        img: 'https://i.imgur.com/LehZspk.jpg'
     },
     'Storm скам': {
         info: 'Storm находится в КМ с конца 2023 года и знал о существовании деанонеров еще до этого. Он пришел из игры Minecraft, но больший интерес к играм возник у него с HvH в CS:GO. Он является создателем проектов, таких как League, Whoami и Maniacalia, а также разработал несколько жвд и террористических игр по городам. Летом 2024 года провел деанономизации известных и не очень пользователей. На данный момент он не находится в КМ, так как в настоящий момент АФК. Зачастую был замечен за обманом пользоветелей.',
@@ -369,6 +360,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'сред.фейм',
         img: 'https://imgur.com/sT1tEO1.jpg'
+    },
+    'цамуленко': {
+        info: 'tsamulenZ - ебырь телezрамовских червей',
+        channel: 'https://t.me/zovclassic',
+        dm: 'https://t.me/tsamulenZ',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/LehZspk.jpg'
     },
     'patalogonia': {
         info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
