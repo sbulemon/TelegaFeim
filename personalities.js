@@ -88,16 +88,7 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'Медийка скам',
         img: 'https://i.imgur.com/Y5WR9Ex.jpg'
-    },
-    'Психо': {
-        info: 'Психо / ᴘsʏʜᴏ Авторитарность Руководитель группировки «Кровавый след». Занимается ликвидированием и разоблачением медийных личностей.',
-        channel: 'https://t.me/+VbQxGzvZLqU1OTE0',
-        dm: 'https://t.me/attackskype',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'Медийка',
-        img: 'https://i.imgur.com/IUHv620.jpg'
-    },    
+    },   
     'Dr.Steven': {
         info: '@Friendlypvp - Dr.Steven, основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
         channel: 'https://t.me/StevenAdapter',
