@@ -26,15 +26,6 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
-    'Валетов': {
-        info: 'Валетов - Согласно публичной информации пришёл в сообщество начиная с 2024 года. За период с 2024 по 2025 год, деятельность @waIetov привела к прекращению существования значительного числа кланов и различных проектов, что подтверждается его работами. Был неоднократно замечен за подделкой своих работ и продажей нерабочих методов для сноса.',
-        channel: 'https://t.me/chapaevv',
-        dm: 'https://t.me/waIetov',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'Главная Медийка',
-        img: 'https://i.imgur.com/PeFCNMJ.jpg'
-    },
     'цамуленко': {
         info: 'tsamulenZ - ебырь телezрамовских червей',
         channel: 'https://t.me/zovclassic',
@@ -44,8 +35,8 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.imgur.com/LehZspk.jpg'
     },
-    'Storm': {
-        info: 'Storm - В км нахожусь с конца 2019 года, знал до этого о существовании деанонеров. Пришел с игры Minecraft, больший интерес получил с HvH в CS:GO. Каждая моя личность была успешна и имела фейм, создатель больших проектов: League, Whoami, Maniacalia (2024-2025). Создатель нескольких жвд и террор игр по городам. Провел валидации огромного кол-ва личностей в 2024 летом. Общаюсь с множеством олдовых людей с вк, телеграма. На данный момент не нахожусь в км так-как АФК.',
+    'Storm скам': {
+        info: 'Storm находится в КМ с конца 2023 года и знал о существовании деанонеров еще до этого. Он пришел из игры Minecraft, но больший интерес к играм возник у него с HvH в CS:GO. Он является создателем проектов, таких как League, Whoami и Maniacalia, а также разработал несколько жвд и террористических игр по городам. Летом 2024 года провел деанономизации известных и не очень пользователей. На данный момент он не находится в КМ, так как в настоящий момент АФК. Зачастую был замечен за обманом пользоветелей.',
         channel: 'https://t.me/maniacalia',
         dm: 'https://t.me/forcegps',
         category: 'top',
@@ -79,16 +70,7 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/Q7gPorf.jpg'
-    },
-    'killface': {
-        info: 'killface появился в комьюнити в 2021 году. Основатель проекта Komaru Dark (Информация X). Стал медийным благодаря масштабным эвакуациям по территории РФ и глубоким знаниям в области OSINT.',
-        channel: 'https://t.me/killface',
-        dm: 'https://t.me/killface',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'Медийка скам',
-        img: 'https://i.imgur.com/Y5WR9Ex.jpg'
-    },   
+    },  
     'Dr.Steven': {
         info: '@Friendlypvp - Dr.Steven, основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
         channel: 'https://t.me/StevenAdapter',
@@ -115,15 +97,6 @@ const personalities = {
         badge: 'badge-top',
         badgeText: 'Медийка',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
-    },
-    'Шат': {
-        info: 'Шат - в комьюнити с 23 года, имеет один из самых крупных проектов cheers dox, обладает хорошими умениями osint, имеет много работ спортиков, провел много валидаций на медийных личностей.',
-        channel: 'https://t.me/cheersdox',
-        dm: 'https://t.me/usershat',
-        category: 'top',
-        badge: 'badge-top',
-        badgeText: 'Медийка',
-        img: 'https://i.imgur.com/raOOO16.jpg'
     },
 //фейм прсто юююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююыывфвфвфв секс дайте  в рот пж
     'Паренек': {
