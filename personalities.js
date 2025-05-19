@@ -216,7 +216,7 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/QG40nBA.jpg'
     },
-    'Ikea': {
+    'Ikea замечан за скамом': {
         info: 'Владелец снесенного проекта, который насчитывал более 20к подписчиков. По его словам, он первый кто валиднул Тихо, но подтверждения его слов нет, также он сливает бомжесофты в канал для ньюгенов.',
         channel: 'https://t.me/GosPanics',
         dm: 'https://t.me/levelstorm',
