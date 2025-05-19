@@ -81,15 +81,6 @@ const personalities = {
         img: 'https://i.imgur.com/kET9Yrw.jpg'
     },
 //фейм прсто юююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююыывфвфвфв секс дайте  в рот пж
-    'Паренек': {
-        info: 'Паренек - с 2018 км зашёл в км с неймом керосинов, сидел в вк км с 2018 по 2020, 2020-2025 тг км. Прославился своими конфликтами с медийками и феймами.',
-        channel: 'https://t.me/FingersCollect',
-        dm: 'https://t.me/snosray',
-        category: 'fame',
-        badge: 'badge-FAME',
-        badgeText: 'FAME',
-        img: 'https://i.imgur.com/vhV3RMg.jpg'
-    },
     'Red kent': {
         info: 'ред кент/мертвый узник/альфа пвп/обелиск (более новая лика) Пришёл в тг км где-то в 2020 году 1 из первых кто начал сватать по скайпу(хз зачем это но пксть будет) Первый фейм был благодаря проекту бикини ботом(2022-2023)(ток в тт больше 20к пдп было, точное количество не помню уже) Также был проект, но он не набрал популярности особо потом из-за тильта удалял все и ливал навремя, щас восстанавливаюсь заново.',
         channel: 'https://t.me/adpbikini',
@@ -107,15 +98,6 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'FAME',
         img: 'https://i.imgur.com/2HnLu5a.jpg'
-    },
-    'lemon': {
-        info: 'владелец сайта и просто тип пошли вы все в пизду ыы  ыы ы ы ы ',
-        channel: 'https://t.me/sbulemon',
-        dm: 'https://t.me/sbulemon',
-        category: 'fame',
-        badge: 'badge-FAME',
-        badgeText: 'CEO',
-        img: 'https://i.imgur.com/S6Lgvze.jpg'
     },
     'Filan Armadov': {
         info: 'Также известен как "Filan Armadov". Основатель проекта "Show Time". Является уничтожителем многих крупных сайтов благодаря DDoS-атакам, а также активно занимается OSINT и программированием. Появился в комьюнити Telegram в 2020-2021 году, активные действия начал вести в 2023-2024 годах. Начал набирать популярность за счет атак на крупные сайты.',
@@ -351,6 +333,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/LehZspk.jpg'
+    },
+    'Паренек': {
+        info: 'Паренек - с 2018 км зашёл в км с неймом керосинов, сидел в вк км с 2018 по 2020, 2020-2025 тг км. Прославился своими конфликтами с медийками и феймами.',
+        channel: 'https://t.me/FingersCollect',
+        dm: 'https://t.me/snosray',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/vhV3RMg.jpg'
     },
     'patalogonia': {
         info: 'Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
