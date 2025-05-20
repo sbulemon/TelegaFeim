@@ -26,7 +26,7 @@ const personalities = {
         badgeText: 'Главная Медийка',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
     },
-    'Storm замечен за скамом': {
+    'Storm': {
         info: 'Storm - находится в КМ с конца 2023 года и знал о существовании деанонеров еще до этого. Он пришел из игры Minecraft, но больший интерес к играм возник у него с HvH в CS:GO. Он является создателем проектов, таких как League, Whoami и Maniacalia, а также разработал несколько жвд и террористических игр по городам. Летом 2024 года провел деанономизации известных и не очень пользователей. На данный момент он не находится в КМ, так как в настоящий момент АФК. Зачастую был замечен за обманом пользоветелей.',
         channel: 'https://t.me/maniacalia',
         dm: 'https://t.me/forcegps',
@@ -514,15 +514,6 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/34Cf1zm.jpg'
     },
-    'Авилов': {
-        info: 'Авилов - пришел в телеграмм комьюнити в конце 2023 года, первую известность приобрел в середине 2024 года, засчет проекта ботнет «Acropolis». Имеет модерки в многих популярных каналах, чатах. На данный момент ведет проект «Paranormal» Известен как OSINT-Специалист.',
-        channel: 'https://t.me/aveparanormal',
-        dm: 'https://t.me/navilov',
-        category: 'mid',
-        badge: 'badge-FAME',
-        badgeText: 'сред.фейм',
-        img: 'https://i.imgur.com/3wAtaHF.jpg'
-    },
     'Авангардов': {
         info: 'Авангардов или же @vkvzIom - в коммьюнити тг с 2019 года, начел развиваться и набирать фейм в 2021 году. Основатель проектов "Alkash cult" @alkashkm , "Killer cult" . Моя деятельность - osint и swat. Валидизировал таких личностей как muller, antipov и sms panika. За спиной нету некого скам и тд.',
         channel: 'https://t.me/alkashkm',
@@ -577,6 +568,7 @@ const personalities = {
         badgeText: 'сред.фейм',
         img: 'https://imgur.com/26HqTQx.jpg'
     },
+//малый фейм 
     'hikari': {
         info: 'Hikari - вступил в комьюнити в 2023 году. Основатель проекта O.D.I.N. В 2025 году ушел из комьюнити из-за выгорания, оставив после себя заметный след благодаря своим техническим достижениям и активности.',
         channel: 'https://t.me/ODINosint',
@@ -586,6 +578,16 @@ const personalities = {
         badgeText: 'мал.фейм',
         img: 'https://i.imgur.com/Z6IhPLy.jpg'
     },
+    'Авилов': {
+        info: 'Авилов - пришел в телеграмм комьюнити в конце 2023 года, первую известность приобрел в середине 2024 года, засчет проекта ботнет «Acropolis». Имеет модерки в многих популярных каналах, чатах. На данный момент ведет проект «Paranormal» Известен как OSINT-Специалист.',
+        channel: 'https://t.me/aveparanormal',
+        dm: 'https://t.me/navilov',
+        category: 'small',
+        badge: 'badge-small',
+        badgeText: 'мал.фейм',
+        img: 'https://i.imgur.com/3wAtaHF.jpg'
+    },
+//кодеры
     'Zolman': {
         info: 'Гриша - разработчик, специализируется на Python, JavaScript, C# и HTML. Активно изучает реверсивную инженерию и пентест. Участвовал в разработке таких проектов как MAPLE, RIGOLIT, HIMARS, LEMON TOOL, частично TOKLOM. Работал с кряками для TOOXAN, warden, akuma, занимался анализом различных инструментов.',
         channel: 'https://t.me/RigOlit',
