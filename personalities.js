@@ -126,7 +126,7 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/dEG7GFR.jpg'
     },
-    'Троффи': {
+    'Троффи замечан за скамом': {
         info: 'Троффи - в комьюнити тг с 21 года, основатель проекта АНТИ-ДЕЛЕГАЦИЯ, (https://t.me/+njBWuxGp9axiNDhi) проект основывается на вылове людей которые работают по своей же стране.',
         channel: 'https://t.me/+njBWuxGp9axiNDhi',
         dm: 'https://t.me/trofingood',
