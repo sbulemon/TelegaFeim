@@ -621,7 +621,7 @@ const personalities = {
         category: 'small',
         badge: 'badge-small',
         badgeText: 'мал.фейм',
-        img: 'https://i.postimg.cc/B6tYd8r6/photo-2025-05-20-18-36-12.jpg'
+        img: 'https://i.postimg.cc/15xgnk57/photo-2025-05-20-23-10-47.jpg'
     },
 //кодеры
     'Zolman': {
