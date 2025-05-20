@@ -83,12 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </button>
                 <div class="dropdown-content">
                     <div class="dropdown-item" data-category="all"><img src="https://img.icons8.com/ios-filled/24/globe--v1.png" alt="All" class="icon"> Все</div>
-                    <div class="dropdown-item" data-category="top"><img src="https://img.icons8.com/ios-filled/24/star--v1.png" alt="Top" class="icon"> Топ медийки</div>
+                    <div class="dropdown-item" data-category="top"><img src="https://img.icons8.com/ios-filled/24/star--v1.png" alt="Top" class="icon"> медийки</div>
                     <div class="dropdown-item" data-category="fame"><img src="https://img.icons8.com/ios-filled/24/fire-element.png" alt="Fame" class="icon"> Фейм</div>
                     <div class="dropdown-item" data-category="mid"><img src="https://img.icons8.com/ios-filled/24/groups.png" alt="Mid" class="icon"> Средний фейм</div>
+                    <div class="dropdown-item" data-category="small"><img src="https://img.icons8.com/ios-filled/24/user-group-man-man.png" alt="Small" class="icon"> Малый фейм</div>
                     <div class="dropdown-item" data-category="coder"><img src="https://img.icons8.com/ios-filled/24/source-code.png" alt="Coder" class="icon"> Кодеры</div>
                     <div class="dropdown-item" data-category="bomg"><img src="https://img.icons8.com/ios-filled/24/skull.png" alt="Bomg" class="icon"> БОМЖеры</div>
                     <div class="dropdown-item" data-category="product"><img src="https://img.icons8.com/ios-filled/24/shopping-cart.png" alt="Product" class="icon"> Товары</div>
+                    <div class="dropdown-item" data-category="admin"><img src="https://img.icons8.com/ios-filled/24/administrator-male.png" alt="Admin" class="icon"> Администраторы</div>
                 </div>
             </div>
 
@@ -107,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="dropdown-item" data-theme="theme-retro"><i class="fas fa-gamepad icon"></i> Ретро</div>
                     <div class="dropdown-item" data-theme="theme-minimal"><i class="fas fa-border-none icon"></i> Минимализм</div>
                     <div class="dropdown-item" data-theme="theme-neon"><i class="fas fa-bolt icon"></i> Неон</div>
+                    <div class="dropdown-item" data-theme="theme-light"><i class="fas fa-sun icon"></i> Светлая</div>
                     <div class="color-picker"><span>Свои цвета:</span> <input type="color" id="primary-color-picker" title="Основной цвет"><button id="reset-color" style="margin-left:8px;">Сбросить</button></div>
                 </div>
             </div>
@@ -139,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
 
         <section class="section fade-in">
-            <h2 class="section-title" id="section-title">Топ медийки</h2>
+            <h2 class="section-title" id="section-title">медийки</h2>
             <div class="grid" id="card-grid"></div>
         </section>
     </div>
@@ -170,12 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="modal-close" onclick="closeFAQModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
             <h2 class="modal-title"><img src="https://img.icons8.com/ios-filled/24/question-mark.png" alt="FAQ" class="icon"> FAQ - Категории</h2>
             <div class="modal-text">
-                <p><strong>Топ медийки</strong> – Лидеры Telegram-комьюнити с высоким влиянием и репутацией.</p>
+                <p><strong>медийки</strong> – Лидеры Telegram-комьюнити с высоким влиянием и репутацией.</p>
                 <p><strong>Фейм</strong> – Популярные личности с активным сообществом и узнаваемостью.</p>
                 <p><strong>Средний фейм</strong> – Известные в узких кругах участники Telegram.</p>
+                <p><strong>Малый фейм</strong> – маленькие известные в узких кругах участники Telegram.</p>
                 <p><strong>Кодеры</strong> – Разработчики, создающие инструменты для комьюнити.</p>
-                <p><strong>БОМЖеры</strong> – Персоны с сомнительной репутацией, связанной с мошенничеством.</p>
+                <p><strong>скам/бомжи</strong> – Персоны с сомнительной репутацией, связанной с мошенничеством.</p>
                 <p><strong>Товары</strong> – Продукты и услуги от проверенных лиц комьюнити.</p>
+                <p><strong>Админы</strong> – Администраторы которые помогают поддерживать порядок сайта</p>
             </div>
         </div>
     </div>
@@ -188,38 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal-actions">
                 <a href="https://t.me/+I10bvYava88yYzIy" class="modal-btn modal-btn-primary" target="_blank">
                     <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Открыть форум
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="announcement-modal" id="announcement-modal">
-        <div class="announcement-content">
-            <button class="modal-close" onclick="closeAnnouncementModal()"><img src="https://img.icons8.com/ios-filled/24/delete-sign.png" alt="Close" class="icon"></button>
-            <h2 class="announcement-title">Объявление</h2>
-            <div class="announcement-text">
-                <p>Принимаем товары на сайт от <strong>проверенных лиц</strong>!<br>
-                Разместите свой продукт в категории "Товары" уже сегодня.<br>
-                <div class="price-container">
-    <div class="price-item">
-        <i class="fab fa-usdt icon" style="color:#26a17b;"></i>
-        <span>1 USDT</span>
-    </div>
-    <div class="price-item">
-        <i class="fas fa-hryvnia icon" style="color:#ffd700;"></i>
-        <span>41 UAH</span>
-    </div>
-    <div class="price-item">
-        <i class="fas fa-ruble-sign icon" style="color:#f44336;"></i>
-        <span>97 RUB</span>
-    </div>
-</div>
-                Для подачи заявки пишите в ЛС: <a href="https://t.me/fametgs" style="color: var(--primary); text-decoration: none;">@fametgs</a>
-                </p>
-            </div>
-            <div class="announcement-actions">
-                <a href="https://t.me/fametgs" class="modal-btn modal-btn-primary" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/24/telegram-app.png" alt="Telegram" class="icon"> Подать заявку
                 </a>
             </div>
         </div>

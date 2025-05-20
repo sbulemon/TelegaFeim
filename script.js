@@ -3,19 +3,21 @@ let currentSearchQuery = '';
 let isInitialLoad = true;
 
 const categories = [
-    { id: 'top', title: 'Топ медийки' },
+    { id: 'top', title: 'медийки' },
     { id: 'fame', title: 'Фейм' },
     { id: 'mid', title: 'Средний фейм' },
+    { id: 'small', title: 'Малый фейм' },
     { id: 'coder', title: 'Кодеры' },
-    { id: 'bomg', title: 'БОМЖеры' },
-    { id: 'product', title: 'Товары' }
+    { id: 'bomg', title: 'скам/бомжи' },
+    { id: 'product', title: 'Товары' },
+    { id: 'admin', title: 'Админы' },
 ];
 
 let currentPage = 1;
 const totalPages = categories.length;
 
 function shortenDescription(username, info) {
-    const prefix = `${username} – один из известных`;
+    const prefix = `${username} – `;
     const maxLength = 40;
     let shortInfo = info.substring(0, maxLength);
     if (info.length > maxLength) {
@@ -42,13 +44,27 @@ function createCard(username, data) {
     return card;
 }
 
+function showSkeletonLoader(count = 6) {
+    const grid = document.getElementById('card-grid');
+    grid.innerHTML = '';
+    for (let i = 0; i < count; i++) {
+        const skeleton = document.createElement('div');
+        skeleton.className = 'card skeleton-card';
+        skeleton.innerHTML = `
+            <div class="skeleton-img"></div>
+            <div class="skeleton-title"></div>
+            <div class="skeleton-desc"></div>
+        `;
+        grid.appendChild(skeleton);
+    }
+}
+
 function renderCards(filter = 'all', searchQuery = '') {
     const grid = document.getElementById('card-grid');
     const sectionTitle = document.getElementById('section-title');
     const paginationInfo = document.getElementById('pagination-info');
     const prevButton = document.getElementById('prev-page');
     const nextButton = document.getElementById('next-page');
-    const announcementModal = document.getElementById('announcement-modal');
 
     if (!grid || !sectionTitle || !paginationInfo || !prevButton || !nextButton) {
         console.error('Required elements not found!');
@@ -61,14 +77,13 @@ function renderCards(filter = 'all', searchQuery = '') {
         return;
     }
 
-    // Показываем объявление только при первом переходе на 6 страницу
-    if (currentPage === 6 && !sessionStorage.getItem('hasSeenAnnouncement')) {
-        announcementModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        sessionStorage.setItem('hasSeenAnnouncement', 'true');
-    } else {
-        announcementModal.classList.remove('active');
-        document.body.style.overflow = '';
+    if (isInitialLoad) {
+        showSkeletonLoader();
+        setTimeout(() => {
+            isInitialLoad = false;
+            renderCards(filter, searchQuery);
+        }, 700);
+        return;
     }
 
     grid.innerHTML = '';
@@ -124,7 +139,6 @@ function changePage(direction) {
     if (currentPage < 1) currentPage = 1;
     if (currentPage > totalPages) currentPage = totalPages;
     currentFilter = 'all'; // Сбрасываем фильтр при пагинации
-    sessionStorage.removeItem('hasSeenAnnouncement');
     renderCards(currentFilter, currentSearchQuery);
 }
 
@@ -188,8 +202,7 @@ function openModal(username, data) {
             console.warn(`No valid prices for ${username}. Expected data.prices to be an object with usd, uah, rub. Got:`, data.prices);
         }
     } else {
-        modalPrice.innerHTML = '<p>Цены доступны только для товаров</p>';
-        console.warn(`Category for ${username} is not 'product'. Got: ${data.category}`);
+        modalPrice.innerHTML = '';
     }
 
     modalChannel.href = data.channel || '#';
@@ -240,19 +253,6 @@ function closeForumModal() {
     document.body.style.overflow = '';
 }
 
-function openAnnouncementModal() {
-    const announcementModal = document.getElementById('announcement-modal');
-    announcementModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeAnnouncementModal() {
-    const announcementModal = document.getElementById('announcement-modal');
-    announcementModal.classList.remove('active');
-    document.body.style.overflow = '';
-    renderCards(currentFilter, currentSearchQuery);
-}
-
 function showWelcomeModal() {
     const hasSeenWelcome = sessionStorage.getItem('hasSeenWelcome');
     if (!hasSeenWelcome) {
@@ -295,6 +295,27 @@ function showCopyNotification() {
     notif.style.opacity = '1';
     setTimeout(() => { notif.style.opacity = '0'; }, 1500);
 }
+
+// --- Свайпы для пагинации на мобильных ---
+let touchStartX = 0;
+let touchEndX = 0;
+function handleTouchStart(e) {
+    touchStartX = e.changedTouches[0].screenX;
+}
+function handleTouchEnd(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchEndX - touchStartX > 60) {
+        // свайп вправо — предыдущая страница
+        const prevBtn = document.getElementById('prev-page');
+        if (prevBtn && !prevBtn.disabled) prevBtn.click();
+    } else if (touchStartX - touchEndX > 60) {
+        // свайп влево — следующая страница
+        const nextBtn = document.getElementById('next-page');
+        if (nextBtn && !nextBtn.disabled) nextBtn.click();
+    }
+}
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchend', handleTouchEnd, false);
 
 document.addEventListener('DOMContentLoaded', () => {
     const faqBtn = document.querySelector('.faq-btn');
@@ -419,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // Esc — закрыть модальные окна
         if (e.key === 'Escape') {
-            const modals = document.querySelectorAll('.modal.active, .welcome-modal.active, .announcement-modal.active');
+            const modals = document.querySelectorAll('.modal.active, .welcome-modal.active');
             modals.forEach(m => m.classList.remove('active'));
             document.body.style.overflow = '';
         }
@@ -435,4 +456,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Восстановление темы при загрузке
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.className = savedTheme;
+    }
 });

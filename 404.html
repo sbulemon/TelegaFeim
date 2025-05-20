@@ -17,12 +17,22 @@
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
+        body.light {
+            background: #f5f5f5 url('https://cdn-kz.kursiv.media/wp-content/uploads/2025/05/img_8458-1024x576.jpeg?utm_source=in_materials') no-repeat center center fixed;
+            color: #222;
+        }
         .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #333;
+            transition: box-shadow 0.5s, background 0.5s, color 0.5s, transform 0.5s;
+            animation: fadeIn404 0.8s cubic-bezier(.4,2,.6,1);
+        }
+        @keyframes fadeIn404 {
+            from { opacity: 0; transform: scale(0.95) translateY(40px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
         }
         h1 {
             font-size: 6rem;
@@ -91,6 +101,10 @@
                 window.location.href = '/';
             }, 2000);
         });
+        // Автоматически включать светлую тему, если в localStorage theme=theme-light
+        if (localStorage.getItem('theme') === 'theme-light') {
+            document.body.classList.add('light');
+        }
     </script>
 </body>
 </html>
