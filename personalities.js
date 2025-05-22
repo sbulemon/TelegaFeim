@@ -90,15 +90,6 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://imgur.com/ULqx9v8.jpg'
     },
-    'Kalashnikov': {
-        info: 'Kalashnikov - aka Dmitry maniac - пришел в 2017 году, был дизайнером и войсером, стал известен после 21 года. Телеграм комьюнити началось с 21 года, стал изучать другие термины. Потом начал реализовать свои крупнейшие проекты с 22 года, а точнее: Blood cartel, Asgard с Антиповым, Трайбол, Водяной знак. На данный момент проектов на 50к++. Известен мастерством осинт поиска, сетевого трафика.',
-        channel: 'https://t.me/overAdapter',
-        dm: 'https://t.me/desertAttack',
-        category: 'fame',
-        badge: 'badge-FAME',
-        badgeText: 'FAME',
-        img: 'https://i.imgur.com/2HnLu5a.jpg'
-    },
     'Filan Armadov': {
         info: 'Filan Armadov - Также известен как "Filan Armadov". Основатель проекта "Show Time". Является уничтожителем многих крупных сайтов благодаря DDoS-атакам, а также активно занимается OSINT и программированием. Появился в комьюнити Telegram в 2020-2021 году, активные действия начал вести в 2023-2024 годах. Начал набирать популярность за счет атак на крупные сайты.',
         channel: 'https://t.me/+xeTcG7qWjglmZWNl',
@@ -126,7 +117,7 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.postimg.cc/rm4bWSn4/photo-2025-05-22-19-29-19.jpg'
     },
-    'бомжик дай 2р': {
+    'Окулистов': {
         info: 'Окулистов - Окулистов появился в 22 году было только пару друзей, круг, шургин, озекал, император, сакерман Занимался в км инфоцыганством, валидализировал зеркало, зевса, частично окулиса, сносингом сватенгом в жизни ничего не добился кроме божественного холисноса на которого молились боги что бы такое священное оружие вышло на свет',
         channel: 'https://t.me/holisnos',
         dm: 'https://t.me/oculistovv',
@@ -136,7 +127,7 @@ const personalities = {
         img: 'https://i.postimg.cc/15sTnVpg/photo-2025-05-22-19-21-34-2.jpg'
     },
     'Кавай': {
-        info: 'Кавай / Kawai harmity - Появился в комьюнити в 2023 году, крайне быстро набрал огромную популярность благодаря провокациям и нестандартным методам. Специалист по OSINT и социальной инженерии. Известен своим ярким стилем и пагубным влиянием на сообществе.',
+        info: 'Кавай / Kawai harmity - Появился в комьюнити в 2024 году, крайне быстро набрал огромную популярность благодаря провокациям и нестандартным методам. Специалист по OSINT и социальной инженерии. Известен своим ярким стилем и пагубным влиянием на сообществе.',
         channel: 'https://t.me/+m5aI0et5sdsyOWIy',
         dm: 'https://t.me/MurderRage',
         category: 'fame',
@@ -759,6 +750,7 @@ const personalities = {
         badgeText: 'CODER',
         img: 'https://i.imgur.com/dKC9x2s.jpg'
     },
+//секс бомжи
     'crystallwallets': {
         info: 'crystallwallets - Заявляю что @Crystallwallets сын далбоеба который сам нихуя не может это топ 1 дожор бомж, я ему дал тэг на время на что он всосал и не отдал прошу распространить это ведь данный человек сынок лярвы это первое, делает липы и так еще накручивает био бля как же это смешно весь клан состоит из накрученных, что он что его пёс куки бой пытался накрутить отзывы, для скама.',
         channel: 'https://t.me/crystallwallets',
@@ -776,6 +768,15 @@ const personalities = {
         badge: 'badge-bomg',
         badgeText: 'БОМЖ',
         img: 'https://i.ytimg.com/vi/HXsM2RidYEk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEzg68rrZczF1a6i8nbhxDz_SjlA'
+    },
+    'Kalashnikov': {
+        info: 'Kalashnikov - aka Dmitry maniac скам дожорка и еще скам сука памперс ебаный сука какже заебали',
+        channel: 'https://t.me/overAdapter',
+        dm: 'https://t.me/desertAttack',
+        category: 'bomg',
+        badge: 'badge-bomg',
+        badgeText: 'БОМЖ',
+        img: 'https://i.imgur.com/2HnLu5a.jpg'
     },
     'userrik': {
         info: 'userrik - скам на сотрудничиство ',
