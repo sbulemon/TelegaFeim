@@ -910,4 +910,13 @@ const personalities = {
         badgeText: 'Админ',
         img: 'https://img.icons8.com/ios-filled/100/administrator-male.png'
     },
+    'Имхо': {
+        info: 'Роль: Отбор малый.фейм',
+        channel: '',
+        dm: 'https://t.me/Muertedoxers',
+        category: 'admin',
+        badge: 'badge-admin',
+        badgeText: 'Админ',
+        img: 'https://img.icons8.com/ios-filled/100/administrator-male.png'
+    },
 };
