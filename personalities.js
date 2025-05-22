@@ -189,15 +189,6 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://imgur.com/ufAYxyn.jpg'
     },
-    'tizercin': {
-        info: 'tizercin - Род занятий: OSINT (разведка по открытым источникам), SOCMINT (анализ социальных сетей), GeoINT (геолокационная разведка), кибербезопасность, анализ данных. Пришел в км в начале 20 года и в этом же году начал свою деятельность.',
-        channel: 'https://t.me/d3l3t3dxuser',
-        dm: 'https://t.me/d3l3t3dxuser',
-        category: 'fame',
-        badge: 'badge-FAME',
-        badgeText: 'FAME',
-        img: 'https://i.imgur.com/QG40nBA.jpg'
-    },
     'Ikea замечен за скамом': {
         info: 'Ikea замечан за скамом - Владелец снесенного проекта, который насчитывал более 20к подписчиков. По его словам, он первый кто валиднул Тихо, но подтверждения его слов нет, также он сливает бомжесофты в канал для ньюгенов.',
         channel: 'https://t.me/GosPanics',
@@ -324,6 +315,15 @@ const personalities = {
         badge: 'badge-FAME',
         badgeText: 'сред.фейм',
         img: 'https://i.imgur.com/vhV3RMg.jpg'
+    },
+    'tizercin': {
+        info: 'tizercin - Род занятий: OSINT (разведка по открытым источникам), SOCMINT (анализ социальных сетей), GeoINT (геолокационная разведка), кибербезопасность, анализ данных. Пришел в км в начале 20 года и в этом же году начал свою деятельность.',
+        channel: 'https://t.me/d3l3t3dxuser',
+        dm: 'https://t.me/d3l3t3dxuser',
+        category: 'mid',
+        badge: 'badge-FAME',
+        badgeText: 'сред.фейм',
+        img: 'https://i.imgur.com/QG40nBA.jpg'
     },
     'patalogonia': {
         info: 'patalogonia - Появился в середине 2019 года имел проэкты с одинаковыми названиями " Patalogonia "  11тыщ подписчиков, 3тыщ подписчиков, 1500 подписчиков.',
