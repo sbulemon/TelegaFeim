@@ -279,6 +279,15 @@ const personalities = {
         badgeText: 'FAME',
         img: 'https://i.imgur.com/VkE9DC2.jpg'
     },
+    'ярик чевхуев': {
+        info: 'ярик чевхуев - @Yarik_shovhul пришел в дс км тролем в 2020 году потом создал трек luv-xivivide в 2022 зафорсилься и перешол в тг тролем и сделал гимн для тролей и для всех игр для гта дота бха и так далие ',
+        channel: 'https://t.me/cheuhuev',
+        dm: 'https://t.me/Yarik_shovhul',
+        category: 'fame',
+        badge: 'badge-FAME',
+        badgeText: 'FAME',
+        img: 'https://i.postimg.cc/SjFsy7Xx/photo-2025-05-22-00-46-59.jpg'
+    },
     'Монолит': {
         info: 'Монолит - В км появился в 2021 году не имел умений не было фейма, бекнулся в 2024 получил фейма, Так же монолит ведёт свой канал "Черный Анархист"',
         channel: 'https://t.me/infomonolit',
