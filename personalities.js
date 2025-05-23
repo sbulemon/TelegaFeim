@@ -802,7 +802,7 @@ const personalities = {
         dm: 'https://t.me/covenox',
         category: 'bomg',
         badge: 'badge-bomg',
-        badgeText: 'БОМЖ',
+        badgeText: 'СКАМ АДМИНЫ',
         img: 'https://i.postimg.cc/4yBryFfM/photo-2025-05-21-20-26-39.jpg'
     },
     'covenox': {
