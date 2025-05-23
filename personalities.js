@@ -796,6 +796,15 @@ const personalities = {
         badgeText: 'БОМЖ',
         img: 'https://i.imgur.com/MwHiBVw.jpg'
     },
+    'World Crime': {
+        info: 'ADMIN covenox - полностью опозорил проект многочисленными скамами, нихуя не брать у world crime и его админов в частности covenox владелец этого скам проекта @fuckgmail',
+        channel: 'https://t.me/worldcrimenet',
+        dm: 'https://t.me/covenox',
+        category: 'bomg',
+        badge: 'badge-bomg',
+        badgeText: 'БОМЖ',
+        img: 'https://i.postimg.cc/4yBryFfM/photo-2025-05-21-20-26-39.jpg'
+    },
     'covenox': {
         info: 'covenox - нищий изгой скамит на нищий 1$ не доверять пинать хуем он вам нихуя не сделает на личном опыте он доксил физ старого владельца и доказывал валидность - база',
         channel: 'https://t.me/lemon_tool',
