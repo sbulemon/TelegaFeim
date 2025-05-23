@@ -973,4 +973,13 @@ const personalities = {
         badgeText: 'Админ',
         img: 'https://img.icons8.com/ios-filled/100/administrator-male.png'
     },
+    'Окулистов': {
+        info: 'Роль: Отбор Сред.фейм',
+        channel: '',
+        dm: 'https://t.me/oculistovv',
+        category: 'admin',
+        badge: 'badge-admin',
+        badgeText: 'Админ',
+        img: 'https://img.icons8.com/ios-filled/100/administrator-male.png'
+    },
 };
