@@ -63,7 +63,7 @@ const personalities = {
         img: 'https://i.imgur.com/Q7gPorf.jpg'
     },  
     'Dr.Steven': {
-        info: 'Dr.Steven - основная медийная личность "Lmao" 21-23 год. Сейчас же владелец N9 REPORT / bomg NEWS и других известных проектов.',
+        info: 'Dr.Steven - Медия личность "Lmao" 21-23 год Сейчас же владелец N9 REPORT / SCAM NEWS и других известных проектов',
         channel: 'https://t.me/StevenAdapter',
         dm: 'https://t.me/Friendlypvp',
         category: 'top',
