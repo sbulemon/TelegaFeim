@@ -86,52 +86,67 @@ function renderCards(filter = 'all', searchQuery = '') {
         return;
     }
 
-    grid.innerHTML = '';
-    let currentCategory = categories[currentPage - 1].id;
-    sectionTitle.textContent = searchQuery ? 'Результаты поиска' : categories[currentPage - 1].title;
+    prevButton.disabled = true;
+    nextButton.disabled = true;
 
-    // Если выбран фильтр (не 'all'), обновляем currentPage
-    if (filter !== 'all') {
-        currentCategory = filter;
-        const categoryIndex = categories.findIndex(cat => cat.id === filter);
-        if (categoryIndex !== -1) {
-            currentPage = categoryIndex + 1;
+    grid.style.transition = 'opacity 0.25s';
+    grid.style.opacity = '0';
+
+    setTimeout(() => {
+        let currentCategory = categories[currentPage - 1].id;
+        sectionTitle.textContent = searchQuery ? 'Результаты поиска' : categories[currentPage - 1].title;
+
+        if (filter !== 'all') {
+            currentCategory = filter;
+            const categoryIndex = categories.findIndex(cat => cat.id === filter);
+            if (categoryIndex !== -1) {
+                currentPage = categoryIndex + 1;
+            }
         }
-    }
 
-    paginationInfo.textContent = `Страница ${currentPage} из ${totalPages}`;
-    prevButton.disabled = currentPage === 1;
-    nextButton.disabled = currentPage === totalPages;
+        paginationInfo.textContent = `Страница ${currentPage} из ${totalPages}`;
+        prevButton.disabled = currentPage === 1;
+        nextButton.disabled = currentPage === totalPages;
 
-    let hasResults = false;
-    Object.entries(personalities).forEach(([username, data]) => {
-        const searchMatch = searchQuery ?
-            (username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-             data.info.toLowerCase().includes(searchQuery.toLowerCase())) :
-            true;
-        const categoryMatch = searchQuery ? true :
-            filter === 'all' ? data.category === currentCategory :
-            data.category.toLowerCase() === filter.toLowerCase();
+        grid.innerHTML = '';
+        let hasResults = false;
+        Object.entries(personalities).forEach(([username, data]) => {
+            const searchMatch = searchQuery ?
+                (username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                 data.info.toLowerCase().includes(searchQuery.toLowerCase())) :
+                true;
+            const categoryMatch = searchQuery ? true :
+                filter === 'all' ? data.category === currentCategory :
+                data.category.toLowerCase() === filter.toLowerCase();
 
-        if (categoryMatch && searchMatch) {
-            const card = createCard(username, data);
-            grid.appendChild(card);
-            hasResults = true;
+            if (categoryMatch && searchMatch) {
+                const card = createCard(username, data);
+                grid.appendChild(card);
+                hasResults = true;
+            }
+        });
+
+        if (!hasResults) {
+            const noResults = document.createElement('div');
+            noResults.className = 'no-results';
+            noResults.textContent = 'Ничего не найдено';
+            grid.appendChild(noResults);
         }
-    });
 
-    if (!hasResults) {
-        const noResults = document.createElement('div');
-        noResults.className = 'no-results';
-        noResults.textContent = 'Ничего не найдено';
-        grid.appendChild(noResults);
-    }
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+            const cardImg = grid.querySelectorAll('.card-img-container');
+            cardImg.forEach(img => img.style.height = window.innerWidth <= 480 ? '140px' : '160px');
+        }
 
-    const isMobile = window.innerWidth <= 768;
-    if (isMobile) {
-        const cardImg = grid.querySelectorAll('.card-img-container');
-        cardImg.forEach(img => img.style.height = window.innerWidth <= 480 ? '140px' : '160px');
-    }
+        setTimeout(() => {
+            grid.style.opacity = '1';
+            setTimeout(() => {
+                prevButton.disabled = currentPage === 1;
+                nextButton.disabled = currentPage === totalPages;
+            }, 250);
+        }, 50);
+    }, 250);
 }
 
 function changePage(direction) {

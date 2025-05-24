@@ -1,3 +1,15 @@
+html {
+    background: var(--secondary);
+}
+
+body {
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
 :root {
     --primary: #00ff99;
     --primary-dark: #00cc88;
@@ -375,7 +387,9 @@ p {
 }
 
 .section {
-    margin-bottom: 60px;
+    position: relative;
+    min-height: 500px;
+    background: transparent;
 }
 
 .section-title {
@@ -384,6 +398,7 @@ p {
     font-size: 2.2rem;
     background: linear-gradient(90deg, var(--primary), var(--text-light));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     text-shadow: 0 3px 10px rgba(0, 255, 153, 0.3);
     animation: titleGlow 3s ease infinite;
@@ -400,6 +415,7 @@ p {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 30px;
     padding: 0 20px;
+    min-height: 400px;
 }
 
 .card {
@@ -411,6 +427,10 @@ p {
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     overflow: hidden;
     position: relative;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .card:hover {
@@ -458,6 +478,7 @@ p {
     margin-bottom: 10px;
     background: linear-gradient(90deg, var(--primary), var(--text-light));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -509,6 +530,7 @@ p {
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 1000;
     align-items: center;
     justify-content: center;
@@ -599,6 +621,7 @@ p {
     color: var(--text-light);
     background: linear-gradient(90deg, var(--primary), var(--text-light));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -704,7 +727,8 @@ p {
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(8px);
-    z-index: 1000;
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1001;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -830,6 +854,7 @@ p {
     font-size: 1.1rem;
     background: linear-gradient(90deg, var(--primary), var(--text-light));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-weight: 700;
     opacity: 0.85;
@@ -842,12 +867,19 @@ p {
 }
 
 .fade-in {
-    animation: fadeIn 0.7s ease-out;
+    animation: fadeIn 0.5s ease-out;
+    will-change: opacity, transform;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
 }
 
 .no-results {
@@ -880,31 +912,75 @@ p {
 }
 
 @media (max-width: 768px) {
-    .container { padding: 4px; }
-    .header { padding: 6px; }
-    .header-img { max-width: 100%; }
-    .search-container { flex-direction: column; gap: 6px; }
-    .search-input, .search-btn { width: 100%; }
-    .control-panel { flex-direction: column; align-items: stretch; padding: 8px; }
-    .grid { grid-template-columns: 1fr; gap: 8px; padding: 0 2px; }
-    .card-img-container { height: 120px; }
-    .card { margin: 2px; }
-    .welcome-content { padding: 6px; }
-    .welcome-character { width: 60px; height: 60px; }
-    .welcome-text { font-size: 0.8rem; }
+    .container { 
+        padding: 15px; 
+    }
+    .header { 
+        padding: 15px; 
+        margin-bottom: 30px;
+    }
+    .header-img { 
+        max-width: 100%; 
+        margin: 15px 0;
+    }
+    .search-container { 
+        flex-direction: column; 
+        gap: 10px; 
+        margin-bottom: 30px;
+    }
+    .search-input, .search-btn { 
+        width: 100%; 
+    }
+    .control-panel { 
+        flex-direction: column; 
+        align-items: stretch; 
+        padding: 15px; 
+        gap: 10px;
+    }
+    .grid { 
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        padding: 0 10px; 
+    }
+    .card-img-container { 
+        height: 150px; 
+    }
+    .card { 
+        margin: 0; 
+    }
+    .section {
+        min-height: 300px;
+    }
+    .grid {
+        min-height: 300px;
+    }
 }
 
 @media (max-width: 480px) {
-    .container { padding: 2px; }
-    .card { margin: 1px; }
-    .card-img-container { height: 80px; }
-    .card-title { font-size: 0.9rem; }
-    .card-desc { font-size: 0.6rem; }
-    .modal-content { padding: 4px; }
-    .section-title { font-size: 1rem; }
-    .welcome-content { padding: 3px; }
-    .welcome-character { width: 40px; height: 40px; }
-    .welcome-text { font-size: 0.6rem; }
+    .container { 
+        padding: 10px; 
+    }
+    .header { 
+        padding: 10px; 
+    }
+    .card { 
+        margin: 0; 
+    }
+    .card-img-container { 
+        height: 120px; 
+    }
+    .card-title { 
+        font-size: 1.1rem; 
+    }
+    .card-desc { 
+        font-size: 0.9rem; 
+    }
+    .modal-content { 
+        padding: 15px; 
+    }
+    .section-title { 
+        font-size: 1.5rem; 
+    }
 }
 
 .icon {
@@ -1069,7 +1145,7 @@ p {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
     background: rgba(0,0,0,0.5);
-    z-index: 3000;
+    z-index: 1002;
 }
 .loader-spinner {
     border: 6px solid #f3f3f3;
@@ -1217,6 +1293,7 @@ p {
 .theme-light .card-title, .theme-light .section-title {
     background: linear-gradient(90deg, #007aff, #0051a8);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 .theme-light .modal {
@@ -1225,6 +1302,7 @@ p {
 .theme-light .modal-title {
     background: linear-gradient(90deg, #007aff, #0051a8);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 .theme-light .modal-btn-primary, .theme-light .welcome-btn {
@@ -1250,6 +1328,7 @@ p {
 .theme-light .watermark {
     background: linear-gradient(90deg, #007aff, #0051a8);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -1285,3 +1364,16 @@ p {
     color: #fff;
 }
 .card[data-category="admin"] .card-img { border-color: #ff9800; }
+
+/* Добавляем поддержку для новых браузеров */
+@supports (backdrop-filter: blur(8px)) {
+    .modal, .welcome-modal {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+    .modal, .welcome-modal {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
